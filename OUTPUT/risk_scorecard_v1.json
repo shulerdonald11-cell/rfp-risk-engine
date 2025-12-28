@@ -1,0 +1,10 @@
+﻿{
+    "scores":  {
+                   "overall":  44,
+                   "pricing":  44,
+                   "execution":  44
+               },
+    "generatedUtc":  "2025-12-28T17:31:01.7222103Z",
+    "version":  "risk_scorecard_v1",
+    "configVersion":  "SCORING_CONFIG_v1"
+}

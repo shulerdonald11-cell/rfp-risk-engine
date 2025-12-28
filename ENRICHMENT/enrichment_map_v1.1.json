@@ -1,0 +1,428 @@
+{
+    "version":  "enrichment_map_v1.1",
+    "generatedUtc":  "2025-12-28T16:55:09Z",
+    "scope":  "WATER_AMI",
+    "rule":  "Enrichment lives outside canonical question files. No wording/ID/order changes.",
+    "entries":  [
+                    {
+                        "questionId":  "W.INSIDE.340",
+                        "prompt":  "How should responsibility be assigned for leaks or damage associated with indoor installations?",
+                        "section":  "INSIDE",
+                        "order":  340,
+                        "risk":  {
+                                     "level":  "HIGH",
+                                     "score":  95,
+                                     "category":  "Interior Damage/Leak Liability",
+                                     "why":  "Unanswered question materially increases execution uncertainty and commercial exposure.",
+                                     "impact":  "Pricing: Unlimited liability = unlimited pricing | Scope: Claims, customer satisfaction, emergency response"
+                                 },
+                        "signals":  {
+                                        "pricingDrivers":  [
+                                                               "Unlimited liability = unlimited pricing"
+                                                           ],
+                                        "scopeImpacts":  [
+                                                             "Claims, customer satisfaction, emergency response"
+                                                         ]
+                                    },
+                        "defaults":  {
+                                         "ifUnansweredAssumption":  "Contractor liable for workmanship only; pre-existing plumbing is utility/customer",
+                                         "mitigationGuidance":  "Define criteria, documentation, response time, and claim workflow"
+                                     },
+                        "clarifications":  [
+                                               "Clarify this item in RFP/addendum or pre-award Q and A; if unresolved, carry contingency and define change-control triggers."
+                                           ]
+                    },
+                    {
+                        "questionId":  "W.CORE.250",
+                        "prompt":  "Will the utility provide service-level or asset-level data to support installation planning?",
+                        "section":  "CORE",
+                        "order":  250,
+                        "risk":  {
+                                     "level":  "HIGH",
+                                     "score":  92,
+                                     "category":  "Data Readiness",
+                                     "why":  "Unanswered question materially increases execution uncertainty and commercial exposure.",
+                                     "impact":  "Pricing: No/partial asset data forces survey labor or conservative production rates | Scope: Material kitting, truck load-outs, failed visits, rework, schedule slip"
+                                 },
+                        "signals":  {
+                                        "pricingDrivers":  [
+                                                               "No/partial asset data forces survey labor or conservative production rates"
+                                                           ],
+                                        "scopeImpacts":  [
+                                                             "Material kitting, truck load-outs, failed visits, rework, schedule slip"
+                                                         ]
+                                    },
+                        "defaults":  {
+                                         "ifUnansweredAssumption":  "Assume data is partial unless proven otherwise; include survey/add-alternate or contingency",
+                                         "mitigationGuidance":  "Require sample extract + data dictionary + accuracy statement; align change control to data defects"
+                                     },
+                        "clarifications":  [
+                                               "Clarify this item in RFP/addendum or pre-award Q and A; if unresolved, carry contingency and define change-control triggers."
+                                           ]
+                    },
+                    {
+                        "questionId":  "W.CORE.270",
+                        "prompt":  "How should existing service-level or asset-level data be relied upon for installation planning and deployment?",
+                        "section":  "CORE",
+                        "order":  270,
+                        "risk":  {
+                                     "level":  "HIGH",
+                                     "score":  90,
+                                     "category":  "Data Reliance/Change Control",
+                                     "why":  "Unanswered question materially increases execution uncertainty and commercial exposure.",
+                                     "impact":  "Pricing: If contractor must validate everything, price rises (survey + failed installs) | Scope: Disputes over productivity and exceptions if data is informational only"
+                                 },
+                        "signals":  {
+                                        "pricingDrivers":  [
+                                                               "If contractor must validate everything, price rises (survey + failed installs)"
+                                                           ],
+                                        "scopeImpacts":  [
+                                                             "Disputes over productivity and exceptions if data is informational only"
+                                                         ]
+                                    },
+                        "defaults":  {
+                                         "ifUnansweredAssumption":  "Assume data requires validation; trigger survey recommendation and explicit exception workflow",
+                                         "mitigationGuidance":  "Contract language: who owns data accuracy, what happens when it is wrong, and how exceptions are paid"
+                                     },
+                        "clarifications":  [
+                                               "Clarify this item in RFP/addendum or pre-award Q and A; if unresolved, carry contingency and define change-control triggers."
+                                           ]
+                    },
+                    {
+                        "questionId":  "W.INSIDE.210",
+                        "prompt":  "Who is responsible for customer outreach and appointment scheduling for indoor meter installations?",
+                        "section":  "INSIDE",
+                        "order":  210,
+                        "risk":  {
+                                     "level":  "HIGH",
+                                     "score":  90,
+                                     "category":  "Customer Access/Scheduling",
+                                     "why":  "Unanswered question materially increases execution uncertainty and commercial exposure.",
+                                     "impact":  "Pricing: Who owns scheduling drives staffing, call center cost, failure rate | Scope: Completion curve, cancellations, no-response plateau"
+                                 },
+                        "signals":  {
+                                        "pricingDrivers":  [
+                                                               "Who owns scheduling drives staffing, call center cost, failure rate"
+                                                           ],
+                                        "scopeImpacts":  [
+                                                             "Completion curve, cancellations, no-response plateau"
+                                                         ]
+                                    },
+                        "defaults":  {
+                                         "ifUnansweredAssumption":  "Assume contractor-led scheduling is required for performance; price call center if unknown",
+                                         "mitigationGuidance":  "Define roles, outreach plan, and utility support actions"
+                                     },
+                        "clarifications":  [
+                                               "Clarify this item in RFP/addendum or pre-award Q and A; if unresolved, carry contingency and define change-control triggers."
+                                           ]
+                    },
+                    {
+                        "questionId":  "W.CORE.140",
+                        "prompt":  "Are there any labor compliance or workforce requirements applicable to this project?",
+                        "section":  "CORE",
+                        "order":  140,
+                        "risk":  {
+                                     "level":  "HIGH",
+                                     "score":  88,
+                                     "category":  "Compliance/Labor",
+                                     "why":  "Unanswered question materially increases execution uncertainty and commercial exposure.",
+                                     "impact":  "Pricing: Prevailing wage / Davis-Bacon / PLA / union requirements can swing unit pricing materially | Scope: Crew composition, productivity assumptions, mobilization and admin burden"
+                                 },
+                        "signals":  {
+                                        "pricingDrivers":  [
+                                                               "Prevailing wage / Davis-Bacon / PLA / union requirements can swing unit pricing materially"
+                                                           ],
+                                        "scopeImpacts":  [
+                                                             "Crew composition, productivity assumptions, mobilization and admin burden"
+                                                         ]
+                                    },
+                        "defaults":  {
+                                         "ifUnansweredAssumption":  "Assume prevailing wage / compliance unknown; carry contingency and require disclosure pre-award",
+                                         "mitigationGuidance":  "Require explicit labor compliance language and funding source disclosure early"
+                                     },
+                        "clarifications":  [
+                                               "Clarify this item in RFP/addendum or pre-award Q and A; if unresolved, carry contingency and define change-control triggers."
+                                           ]
+                    },
+                    {
+                        "questionId":  "W.INSIDE.360",
+                        "prompt":  "What is the expected primary method for shutting off water during indoor meter replacement?",
+                        "section":  "INSIDE",
+                        "order":  360,
+                        "risk":  {
+                                     "level":  "HIGH",
+                                     "score":  88,
+                                     "category":  "Shutoff Method/Isolation Risk",
+                                     "why":  "Unanswered question materially increases execution uncertainty and commercial exposure.",
+                                     "impact":  "Pricing: If curb stop/valves are unreliable, installs slow and risk skyrockets | Scope: Crew tooling, escalation needs, failure modes"
+                                 },
+                        "signals":  {
+                                        "pricingDrivers":  [
+                                                               "If curb stop/valves are unreliable, installs slow and risk skyrockets"
+                                                           ],
+                                        "scopeImpacts":  [
+                                                             "Crew tooling, escalation needs, failure modes"
+                                                         ]
+                                    },
+                        "defaults":  {
+                                         "ifUnansweredAssumption":  "Assume interior valve preferred with curb stop backup; require curb stop authorization clarity",
+                                         "mitigationGuidance":  "Define isolation method, backup plan, and who responds when isolation fails"
+                                     },
+                        "clarifications":  [
+                                               "Clarify this item in RFP/addendum or pre-award Q and A; if unresolved, carry contingency and define change-control triggers."
+                                           ]
+                    },
+                    {
+                        "questionId":  "W.PIT.730",
+                        "prompt":  "Will the Utility provide a master CIS/service data file?",
+                        "section":  "PIT",
+                        "order":  730,
+                        "risk":  {
+                                     "level":  "HIGH",
+                                     "score":  88,
+                                     "category":  "Data Provisioning",
+                                     "why":  "Unanswered question materially increases execution uncertainty and commercial exposure.",
+                                     "impact":  "Pricing: No master file = manual build of work orders, high admin cost | Scope: Start-up timeline, integration, quality"
+                                 },
+                        "signals":  {
+                                        "pricingDrivers":  [
+                                                               "No master file = manual build of work orders, high admin cost"
+                                                           ],
+                                        "scopeImpacts":  [
+                                                             "Start-up timeline, integration, quality"
+                                                         ]
+                                    },
+                        "defaults":  {
+                                         "ifUnansweredAssumption":  "Assume master file exists but may be incomplete; require sample and refresh plan",
+                                         "mitigationGuidance":  "Require sample extract, cadence, transfer method, and defect process"
+                                     },
+                        "clarifications":  [
+                                               "Clarify this item in RFP/addendum or pre-award Q and A; if unresolved, carry contingency and define change-control triggers."
+                                           ]
+                    },
+                    {
+                        "questionId":  "W.PIT.700",
+                        "prompt":  "If RTU/UIR items remain unresolved due to utility-side delays, may the contractor advance to new routes?",
+                        "section":  "PIT",
+                        "order":  700,
+                        "risk":  {
+                                     "level":  "HIGH",
+                                     "score":  87,
+                                     "category":  "Progression Protection",
+                                     "why":  "Unanswered question materially increases execution uncertainty and commercial exposure.",
+                                     "impact":  "Pricing: No protection forces repeated revisits and kills production | Scope: Schedule certainty and cashflow"
+                                 },
+                        "signals":  {
+                                        "pricingDrivers":  [
+                                                               "No protection forces repeated revisits and kills production"
+                                                           ],
+                                        "scopeImpacts":  [
+                                                             "Schedule certainty and cashflow"
+                                                         ]
+                                    },
+                        "defaults":  {
+                                         "ifUnansweredAssumption":  "Assume contractor must be allowed to advance when blocked by utility delays",
+                                         "mitigationGuidance":  "Add progression rule: unresolved RTU/UIR does not block new routes after documentation"
+                                     },
+                        "clarifications":  [
+                                               "Clarify this item in RFP/addendum or pre-award Q and A; if unresolved, carry contingency and define change-control triggers."
+                                           ]
+                    },
+                    {
+                        "questionId":  "W.CORE.320",
+                        "prompt":  "Will a pre-deployment field survey or audit be required to validate asset data, site conditions, or work scope prior to installation?",
+                        "section":  "CORE",
+                        "order":  320,
+                        "risk":  {
+                                     "level":  "HIGH",
+                                     "score":  86,
+                                     "category":  "Survey/Front-End Risk Burn Down",
+                                     "why":  "Unanswered question materially increases execution uncertainty and commercial exposure.",
+                                     "impact":  "Pricing: Survey cost vs embedding contingency into unit price | Scope: Schedule sequencing (survey -\u003e kitting -\u003e install) and gating to start"
+                                 },
+                        "signals":  {
+                                        "pricingDrivers":  [
+                                                               "Survey cost vs embedding contingency into unit price"
+                                                           ],
+                                        "scopeImpacts":  [
+                                                             "Schedule sequencing (survey -\u003e kitting -\u003e install) and gating to start"
+                                                         ]
+                                    },
+                        "defaults":  {
+                                         "ifUnansweredAssumption":  "Assume limited survey required if data uncertainty exists; propose optional add-alternate",
+                                         "mitigationGuidance":  "Define survey scope, deliverables, acceptance, and how survey results adjust quantities"
+                                     },
+                        "clarifications":  [
+                                               "Clarify this item in RFP/addendum or pre-award Q and A; if unresolved, carry contingency and define change-control triggers."
+                                           ]
+                    },
+                    {
+                        "questionId":  "W.INSIDE.390",
+                        "prompt":  "If an interior shutoff valve is non-functional, is replacement authorized?",
+                        "section":  "INSIDE",
+                        "order":  390,
+                        "risk":  {
+                                     "level":  "HIGH",
+                                     "score":  86,
+                                     "category":  "Valve Replacement Authorization",
+                                     "why":  "Unanswered question materially increases execution uncertainty and commercial exposure.",
+                                     "impact":  "Pricing: No authorization creates abandonments and revisits; yes creates material + labor costs | Scope: Customer coordination, utility dispatch needs"
+                                 },
+                        "signals":  {
+                                        "pricingDrivers":  [
+                                                               "No authorization creates abandonments and revisits; yes creates material + labor costs"
+                                                           ],
+                                        "scopeImpacts":  [
+                                                             "Customer coordination, utility dispatch needs"
+                                                         ]
+                                    },
+                        "defaults":  {
+                                         "ifUnansweredAssumption":  "Assume not authorized unless defined; include contingency line item if unknown",
+                                         "mitigationGuidance":  "Define decision tree: replace under allowance vs utility responsibility"
+                                     },
+                        "clarifications":  [
+                                               "Clarify this item in RFP/addendum or pre-award Q and A; if unresolved, carry contingency and define change-control triggers."
+                                           ]
+                    },
+                    {
+                        "questionId":  "W.PIT.770",
+                        "prompt":  "If installation is correct but communication fails due to system/material constraints, how is responsibility assigned?",
+                        "section":  "PIT",
+                        "order":  770,
+                        "risk":  {
+                                     "level":  "HIGH",
+                                     "score":  86,
+                                     "category":  "Non-Read Liability",
+                                     "why":  "Unanswered question materially increases execution uncertainty and commercial exposure.",
+                                     "impact":  "Pricing: If contractor eats comm failures, bids get padded | Scope: Warranty disputes and rework"
+                                 },
+                        "signals":  {
+                                        "pricingDrivers":  [
+                                                               "If contractor eats comm failures, bids get padded"
+                                                           ],
+                                        "scopeImpacts":  [
+                                                             "Warranty disputes and rework"
+                                                         ]
+                                    },
+                        "defaults":  {
+                                         "ifUnansweredAssumption":  "Assume ownership is case-by-case unless clarified; flag as major commercial risk",
+                                         "mitigationGuidance":  "Separate install workmanship vs system/material constraints; set responsibility boundaries"
+                                     },
+                        "clarifications":  [
+                                               "Clarify this item in RFP/addendum or pre-award Q and A; if unresolved, carry contingency and define change-control triggers."
+                                           ]
+                    },
+                    {
+                        "questionId":  "W.PIT.680",
+                        "prompt":  "How should locations outside contractor scope be handled?",
+                        "section":  "PIT",
+                        "order":  680,
+                        "risk":  {
+                                     "level":  "HIGH",
+                                     "score":  85,
+                                     "category":  "RTU Scope Leakage",
+                                     "why":  "Unanswered question materially increases execution uncertainty and commercial exposure.",
+                                     "impact":  "Pricing: Undefined RTU = contractor absorbs out-of-scope time unless paid | Scope: Exception handling, reconciliation, program closeout"
+                                 },
+                        "signals":  {
+                                        "pricingDrivers":  [
+                                                               "Undefined RTU = contractor absorbs out-of-scope time unless paid"
+                                                           ],
+                                        "scopeImpacts":  [
+                                                             "Exception handling, reconciliation, program closeout"
+                                                         ]
+                                    },
+                        "defaults":  {
+                                         "ifUnansweredAssumption":  "Assume RTU exists; require formal disposition + commercial treatment",
+                                         "mitigationGuidance":  "Define RTU reasons, documentation, and payment rules (attempt fee or unit credit)"
+                                     },
+                        "clarifications":  [
+                                               "Clarify this item in RFP/addendum or pre-award Q and A; if unresolved, carry contingency and define change-control triggers."
+                                           ]
+                    },
+                    {
+                        "questionId":  "W.INSIDE.250",
+                        "prompt":  "Will contractor-provided call center and dispatch capability be required for indoor scheduling?",
+                        "section":  "INSIDE",
+                        "order":  250,
+                        "risk":  {
+                                     "level":  "HIGH",
+                                     "score":  84,
+                                     "category":  "Call Center/Dispatch",
+                                     "why":  "Unanswered question materially increases execution uncertainty and commercial exposure.",
+                                     "impact":  "Pricing: Call center is a real cost center; pretending otherwise is expensive | Scope: Same-day fills, cancellation recovery"
+                                 },
+                        "signals":  {
+                                        "pricingDrivers":  [
+                                                               "Call center is a real cost center; pretending otherwise is expensive"
+                                                           ],
+                                        "scopeImpacts":  [
+                                                             "Same-day fills, cancellation recovery"
+                                                         ]
+                                    },
+                        "defaults":  {
+                                         "ifUnansweredAssumption":  "Assume call center needed for meaningful indoor volume; include in pricing if undefined",
+                                         "mitigationGuidance":  "Define staffing hours, channels, language needs, and dispatch authority"
+                                     },
+                        "clarifications":  [
+                                               "Clarify this item in RFP/addendum or pre-award Q and A; if unresolved, carry contingency and define change-control triggers."
+                                           ]
+                    },
+                    {
+                        "questionId":  "W.PIT.660",
+                        "prompt":  "Will route-level completion thresholds be required before advancing?",
+                        "section":  "PIT",
+                        "order":  660,
+                        "risk":  {
+                                     "level":  "HIGH",
+                                     "score":  84,
+                                     "category":  "Route Governance/Throughput",
+                                     "why":  "Unanswered question materially increases execution uncertainty and commercial exposure.",
+                                     "impact":  "Pricing: Hard gating thresholds reduce productivity and increase revisits | Scope: Route closure definition, RTU/UIR backlog, completion plateau risk"
+                                 },
+                        "signals":  {
+                                        "pricingDrivers":  [
+                                                               "Hard gating thresholds reduce productivity and increase revisits"
+                                                           ],
+                                        "scopeImpacts":  [
+                                                             "Route closure definition, RTU/UIR backlog, completion plateau risk"
+                                                         ]
+                                    },
+                        "defaults":  {
+                                         "ifUnansweredAssumption":  "Assume gating exists unless explicitly denied; require progression protection language",
+                                         "mitigationGuidance":  "Define closure dispositions + allow advance when remaining are RTU/UIR/no-access"
+                                     },
+                        "clarifications":  [
+                                               "Clarify this item in RFP/addendum or pre-award Q and A; if unresolved, carry contingency and define change-control triggers."
+                                           ]
+                    },
+                    {
+                        "questionId":  "W.PIT.690",
+                        "prompt":  "How should locations requiring utility action be handled?",
+                        "section":  "PIT",
+                        "order":  690,
+                        "risk":  {
+                                     "level":  "HIGH",
+                                     "score":  83,
+                                     "category":  "UIR Dependency",
+                                     "why":  "Unanswered question materially increases execution uncertainty and commercial exposure.",
+                                     "impact":  "Pricing: UIR delays create idle time, route churn, remobilization | Scope: Utility responsiveness, backlog management"
+                                 },
+                        "signals":  {
+                                        "pricingDrivers":  [
+                                                               "UIR delays create idle time, route churn, remobilization"
+                                                           ],
+                                        "scopeImpacts":  [
+                                                             "Utility responsiveness, backlog management"
+                                                         ]
+                                    },
+                        "defaults":  {
+                                         "ifUnansweredAssumption":  "Assume UIR occurs; require SLA/response windows or progression protection",
+                                         "mitigationGuidance":  "Define utility action SLA and contractor right to advance"
+                                     },
+                        "clarifications":  [
+                                               "Clarify this item in RFP/addendum or pre-award Q and A; if unresolved, carry contingency and define change-control triggers."
+                                           ]
+                    }
+                ]
+}

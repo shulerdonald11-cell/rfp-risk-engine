@@ -1,0 +1,21 @@
+﻿{
+    "scoringConfigVersion":  "SCORING_CONFIG_v1",
+    "version":  "phase6_build_manifest_v1",
+    "generatedUtc":  "2025-12-28T17:47:02.3408113Z",
+    "missingOutputs":  [
+
+                       ],
+    "outputs":  [
+                    "OUTPUT\\risk_scorecard_v1.json",
+                    "OUTPUT\\bid_decision_v1.md",
+                    "OUTPUT\\executive_risk_summary_v1.md",
+                    "OUTPUT\\pricing_risk_v1.json",
+                    "OUTPUT\\execution_risk_v1.json"
+                ],
+    "inputs":  {
+                   "enrichment":  "ENRICHMENT/enrichment_map_v1.1.json",
+                   "phase5Summary":  "OUTPUT/risk_summary_v1.md",
+                   "gaps":  "OUTPUT/gaps_v0.md"
+               },
+    "status":  "SUCCESS"
+}
