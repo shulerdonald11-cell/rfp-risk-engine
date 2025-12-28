@@ -1,0 +1,54 @@
+﻿===== MASTER_SPEC =====
+Folder PATH listing for volume Windows
+Volume serial number is 7851-A8BC
+C:\USERS\SHULE\DOCUMENTS\SHULER LLC\RFP_RISK_ENGINE\MASTER_SPEC
++---CURRENT
+|       MASTER_UNIVERSE_SPEC_v1.0.md
+|       
+\---DEPRECATED
+        MASTER_UNIVERSE_SPEC_v0.9.md
+        
+
+===== DOMAINS/WATER_AMI/questions =====
+Folder PATH listing for volume Windows
+Volume serial number is 7851-A8BC
+C:\USERS\SHULE\DOCUMENTS\SHULER LLC\RFP_RISK_ENGINE\DOMAINS\WATER_AMI\QUESTIONS
+    core.json
+    inside_extentions.json
+    pit_extentions.json
+    
+No subfolders exist 
+
+
+===== ARCHIVE/legacy_inputs =====
+Folder PATH listing for volume Windows
+Volume serial number is 7851-A8BC
+C:\USERS\SHULE\DOCUMENTS\SHULER LLC\RFP_RISK_ENGINE\ARCHIVE\LEGACY_INPUTS
+|   QuestionsBundle-Water-PIT-Inside.json
+|   Scope Artifact - Inside Set (Indoor Meter) Questions v1.0.1 - Question ID correction (LOCKED).docx
+|   Scope Artifact - Water PIT (Outside Meter) Questions (LOCKED).docx
+|   
++---LOCKED_WATER_CORE_A1_B2A_v1.0
+|       AnswerTokenRegistry-Core-A1-B2A-v1.0.json
+|       LOCK_NOTES.md
+|       QuestionsBundle-Water-Core-A1-B2A-v1.0.json
+|       SMUS_AMI_Scope_Methodology_Core_v1.0.md
+|       
++---LOCKED_WATER_CORE_B1_B9_v1.0
+|       AnswerTokenRegistry-Core-B1-B9-v1.0.json
+|       LOCK_NOTES_B1_B9_v1.0.md
+|       QuestionsBundle-Water-Core-B1-B9-v1.0.json
+|       SMUS_AMI_Scope_Methodology_Core_B1_B9_v1.0.md
+|       
++---LOCKED_WATER_CORE_C1_C9_v1.0
+|       AnswerTokenRegistry-Core-C1-C9-v1.0.json
+|       QuestionsBundle-Water-Core-C1-C9-v1.0.json
+|       SMUS_AMI_Scope_Methodology_Core_C1_C9_v1.0.md
+|       
++---LOCKED_WATER_CORE_D1_D6_v1.0
+|       AnswerTokenRegistry-Core-D1-D6-v1.0.json
+|       LOCK_NOTES.md
+|       QuestionsBundle-Water-Core-D1-D6-v1.0.json
+|       SMUS_AMI_Scope_Methodology_Core_v1.0.md
+|       
+\---Master Combined

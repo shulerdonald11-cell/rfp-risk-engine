@@ -1,4 +1,4 @@
-{
+﻿{
   "domainId": "WATER_AMI",
   "section": "PIT",
   "questions": [
@@ -14,7 +14,7 @@
       "options": ["Full replacement", "Targeted replacement", "Hybrid", "Retrofit-only", "Unknown"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E1"}
     },
     {
@@ -29,7 +29,7 @@
       "options": ["Yes", "No", "Partially", "Not sure"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E2"}
     },
     {
@@ -41,10 +41,10 @@
       "executionContexts": ["PIT"],
       "prompt": "How frequently are skipped locations expected?",
       "answerType": "single",
-      "options": ["<5%", "5–15%", "15–30%", ">30%", "Unknown"],
+      "options": ["<5%", "5â€“15%", "15â€“30%", ">30%", "Unknown"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E3"}
     },
     {
@@ -59,7 +59,7 @@
       "options": ["Yes", "Mostly", "Mixed", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E4"}
     },
     {
@@ -74,7 +74,7 @@
       "options": ["Utility", "Contractor", "Shared", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E5"}
     },
     {
@@ -89,7 +89,7 @@
       "options": ["Yes", "No", "Not sure"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E5a"}
     },
     {
@@ -104,7 +104,7 @@
       "options": ["Yes", "No", "Under consideration", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E6"}
     },
     {
@@ -119,7 +119,7 @@
       "options": ["Completed installs", "Customer refusals", "RTU logged", "UIR logged", "Final reconciliation"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E7"}
     },
     {
@@ -134,7 +134,7 @@
       "options": ["Logged & returned", "Separate contingency", "Removed from scope", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E8"}
     },
     {
@@ -149,7 +149,7 @@
       "options": ["Utility resolves", "Contractor authorized upon approval", "Combination", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E9"}
     },
     {
@@ -164,7 +164,7 @@
       "options": ["Yes", "No", "Case-by-case", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E10"}
     },
     {
@@ -179,7 +179,7 @@
       "options": ["Yes", "No", "Some areas", "Unknown"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E11"}
     },
     {
@@ -194,7 +194,7 @@
       "options": ["Yes", "No", "Not sure"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E12"}
     },
     {
@@ -209,7 +209,7 @@
       "options": ["Yes", "No", "Not sure"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E13"}
     },
     {
@@ -224,7 +224,7 @@
       "options": ["Daily", "Weekly", "Monthly", "One-time", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E13a"}
     },
     {
@@ -239,7 +239,7 @@
       "options": ["Automated integration", "Secure file transfer", "Spreadsheet/manual", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E14a"}
     },
     {
@@ -254,7 +254,7 @@
       "options": ["Contractor correction", "Utility resolution", "Exception workflow", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E15"}
     },
     {
@@ -269,7 +269,7 @@
       "options": ["Yes", "No", "Vendor-defined", "Not specified"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E16"}
     },
     {
@@ -284,7 +284,7 @@
       "options": ["Contractor", "Vendor", "Utility", "Case-by-case", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E17"}
     },
     {
@@ -299,8 +299,9 @@
       "options": ["No", "Only if install error", "Yes", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "PIT_LOCKED_DOCX+JSON", "legacyQuestionId": "E18"}
     }
   ]
 }
+

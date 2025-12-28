@@ -1,4 +1,4 @@
-{
+﻿{
   "domainId": "WATER_AMI",
   "section": "INSIDE",
   "questions": [
@@ -11,10 +11,10 @@
       "executionContexts": ["INSIDE"],
       "prompt": "Does this project include indoor water meter installations?",
       "answerType": "single",
-      "options": ["Yes — majority of meters", "Yes — limited subset", "No", "Not sure"],
+      "options": ["Yes â€” majority of meters", "Yes â€” limited subset", "No", "Not sure"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I1"}
     },
     {
@@ -26,10 +26,10 @@
       "executionContexts": ["INSIDE"],
       "prompt": "Approximately what percentage of total meters are indoor installations?",
       "answerType": "single",
-      "options": ["<10%", "10–25%", "25–50%", ">50%", "Unknown"],
+      "options": ["<10%", "10â€“25%", "25â€“50%", ">50%", "Unknown"],
       "notesEnabled": true,
       "helperText": "Higher indoor percentages materially impact scheduling, staffing, and customer coordination.",
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I2"}
     },
     {
@@ -51,7 +51,7 @@
       ],
       "notesEnabled": true,
       "helperText": "MDU + commercial often require separate scheduling logic and different productivity assumptions.",
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I3"}
     },
 
@@ -67,7 +67,7 @@
       "options": ["Utility-led (contractor supports)", "Contractor-led (utility supports)", "Shared responsibility", "Not defined"],
       "notesEnabled": true,
       "helperText": "Customer access drives productivity; define responsibility to avoid stalled completion rates.",
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I4"}
     },
     {
@@ -80,14 +80,14 @@
       "prompt": "What outreach sequence is required before an account is classified as no-response / escalated?",
       "answerType": "single",
       "options": [
-        "Utility letter + 1–2 contractor contacts",
-        "Utility letter + 3–4 contractor contacts (recommended)",
+        "Utility letter + 1â€“2 contractor contacts",
+        "Utility letter + 3â€“4 contractor contacts (recommended)",
         "Utility letter + 5+ contractor contacts",
         "Not defined"
       ],
       "notesEnabled": true,
       "helperText": "Initial utility letter, then three mailed attempts with increasing urgency. Optional final door hanger may be used at additional cost.",
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I4a"}
     },
     {
@@ -101,13 +101,13 @@
       "answerType": "single",
       "options": [
         "After a defined number of attempts",
-        "After a defined time window (e.g., 30–60 days)",
+        "After a defined time window (e.g., 30â€“60 days)",
         "Utility discretion",
         "Not defined"
       ],
       "notesEnabled": true,
       "helperText": "Contractors should not be expected to perform unlimited reattempts for non-responsive customers.",
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I4b"}
     },
     {
@@ -129,7 +129,7 @@
       ],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I4c"}
     },
     {
@@ -143,8 +143,8 @@
       "answerType": "single",
       "options": ["2-hour windows", "4-hour windows (recommended)", "All-day windows", "Other / not defined"],
       "notesEnabled": true,
-      "helperText": "2–4 hour windows balance customer convenience with route flexibility and allow crews to absorb cancellations.",
-      "status": "draft",
+      "helperText": "2â€“4 hour windows balance customer convenience with route flexibility and allow crews to absorb cancellations.",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I5"}
     },
     {
@@ -159,7 +159,7 @@
       "options": ["Yes", "No", "Shared with utility", "Not sure / not defined"],
       "notesEnabled": true,
       "helperText": "Larger indoor programs benefit from a scheduling command center to fill cancellations and improve completion rates.",
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I6"}
     },
     {
@@ -179,7 +179,7 @@
       ],
       "notesEnabled": true,
       "helperText": "One courtesy reschedule is common; repeated misses should trigger defined fees or escalation.",
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I7"}
     },
 
@@ -204,7 +204,7 @@
       ],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I8"}
     },
     {
@@ -219,7 +219,7 @@
       "options": ["Service address only", "Billing/mailing address only", "Both service + billing/mailing (recommended)", "Not defined"],
       "notesEnabled": true,
       "helperText": "Commercial and absentee-owner accounts may not receive mail at the service address.",
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I8a"}
     },
     {
@@ -234,7 +234,7 @@
       "options": ["Yes (flagged list available)", "Somewhat", "No", "Not sure"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I8b"}
     },
     {
@@ -246,10 +246,10 @@
       "executionContexts": ["INSIDE"],
       "prompt": "How many contact attempts should be made before classifying an account as no-response?",
       "answerType": "single",
-      "options": ["1–2", "3–4", "5+", "Not defined"],
+      "options": ["1â€“2", "3â€“4", "5+", "Not defined"],
       "notesEnabled": true,
       "helperText": "Best practice includes multiple contact attempts across different channels.",
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I9"}
     },
     {
@@ -264,7 +264,7 @@
       "options": ["After defined number of attempts", "After a defined time period", "At utility discretion", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I10"}
     },
 
@@ -288,7 +288,7 @@
       ],
       "notesEnabled": true,
       "helperText": "Indoor route closure must be based on documented outcomes, not 100% installs.",
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I11"}
     },
     {
@@ -303,7 +303,7 @@
       "options": ["Yes (recommended)", "No", "Subject to approval", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I12"}
     },
 
@@ -319,7 +319,7 @@
       "options": ["Logged and returned to utility", "Escalated through utility outreach", "Considered complete for contractor scope", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I13"}
     },
     {
@@ -339,7 +339,7 @@
       ],
       "notesEnabled": true,
       "helperText": "Contractor is responsible for workmanship-related issues. Pre-existing failures outside contractor control should follow defined utility contingency.",
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I14"}
     },
     {
@@ -354,7 +354,7 @@
       "options": ["Yes", "No", "Unknown"],
       "notesEnabled": true,
       "helperText": "If yes/unknown: define special procedures and shared-risk escalation; consider audit/field validation.",
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I14a"}
     },
 
@@ -370,7 +370,7 @@
       "options": ["Interior shutoff valve only", "Curb stop (B-Box) only", "Interior valve preferred; curb stop as backup (recommended)", "Not defined"],
       "notesEnabled": true,
       "helperText": "Uncertainty around valves, curb stops, and access introduces contractor risk, typically reflected in higher unit pricing.",
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I15"}
     },
     {
@@ -385,7 +385,7 @@
       "options": ["Generally reliable", "Mixed condition", "Frequently inoperable", "Unknown"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I16"}
     },
     {
@@ -400,7 +400,7 @@
       "options": ["Ball valves", "Gate valves", "Globe valves", "Mixed / varies", "Unknown"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I16a"}
     },
     {
@@ -412,10 +412,10 @@
       "executionContexts": ["INSIDE"],
       "prompt": "If an interior shutoff valve is non-functional, is replacement authorized?",
       "answerType": "single",
-      "options": ["Yes — included in installation scope", "Yes — under contingency allowance", "No — utility responsibility", "Not defined"],
+      "options": ["Yes â€” included in installation scope", "Yes â€” under contingency allowance", "No â€” utility responsibility", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I16b"}
     },
 
@@ -428,10 +428,10 @@
       "executionContexts": ["INSIDE"],
       "prompt": "Does the utility maintain asset-level data identifying curb stop locations?",
       "answerType": "single",
-      "options": ["Yes — accurate and current", "Partial / limited accuracy", "No", "Not sure"],
+      "options": ["Yes â€” accurate and current", "Partial / limited accuracy", "No", "Not sure"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I17a"}
     },
     {
@@ -446,7 +446,7 @@
       "options": ["Generally accessible", "Mixed condition", "Frequently buried / obstructed", "Unknown"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I17b"}
     },
     {
@@ -458,10 +458,10 @@
       "executionContexts": ["INSIDE"],
       "prompt": "Is the installation contractor authorized to access and operate curb stops?",
       "answerType": "single",
-      "options": ["Yes", "Yes — with limitations", "No — utility staff only", "Not defined"],
+      "options": ["Yes", "Yes â€” with limitations", "No â€” utility staff only", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I18"}
     },
     {
@@ -476,7 +476,7 @@
       "options": ["Same-day", "Next-day", "Scheduled", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I18a"}
     },
     {
@@ -491,7 +491,7 @@
       "options": ["Included in unit price", "Separate contingency line item (recommended)", "Time & materials", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I18b"}
     },
 
@@ -507,7 +507,7 @@
       "options": ["Specific valve/model required", "General specifications provided", "Contractor standard acceptable", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I20"}
     },
     {
@@ -522,7 +522,7 @@
       "options": ["Yes", "No", "Only with utility approval", "Not applicable", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I21"}
     },
     {
@@ -537,7 +537,7 @@
       "options": ["Contractor mitigates", "Utility dispatches emergency crew", "Shared response", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I24"}
     },
     {
@@ -552,8 +552,9 @@
       "options": ["Visual leak check", "Pressure stabilization", "Customer confirmation", "Documentation/photo", "Not defined"],
       "notesEnabled": true,
       "helperText": null,
-      "status": "draft",
+      "status": "locked",
       "source": {"artifact": "INSIDE_LOCKED_DOCX+JSON", "legacyQuestionId": "I25"}
     }
   ]
 }
+
