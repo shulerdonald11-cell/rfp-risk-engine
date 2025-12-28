@@ -1,0 +1,19 @@
+﻿{
+    "bundleId":  "water_ami_universe_v1.1_locked",
+    "projectMeta":  {
+                        "client":  "Sample Utility",
+                        "projectName":  "AMI Deployment Pilot",
+                        "createdAt":  "2025-12-28"
+                    },
+    "answers":  {
+                    "W.CORE.110":  "Unknown",
+                    "W.CORE.120":  "Unknown",
+                    "W.CORE.130":  "Unknown",
+                    "W.PIT.610":  "Unknown",
+                    "W.PIT.620":  "Unknown",
+                    "W.PIT.630":  "Unknown",
+                    "W.INSIDE.110":  "Unknown",
+                    "W.INSIDE.120":  "Unknown",
+                    "W.INSIDE.130":  "Unknown"
+                }
+}

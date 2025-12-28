@@ -1,0 +1,14 @@
+﻿{
+    "bundleId":  "water_ami_universe_v1.1_locked",
+    "answersFile":  "C:\\Users\\shule\\Documents\\Shuler LLC\\RFP_RISK_ENGINE\\RUNTIME\\answers\\sample_answers_v1.json",
+    "missingInUniverse":  [
+
+                          ],
+    "providedCount":  9,
+    "unknownCount":  9,
+    "sections":  {
+                     "CORE":  3,
+                     "PIT":  3,
+                     "INSIDE":  3
+                 }
+}
