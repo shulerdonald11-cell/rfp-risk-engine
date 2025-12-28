@@ -1,0 +1,8 @@
+﻿{
+    "version":  "1.1",
+    "scope":  "WATER_AMI",
+    "note":  "Non-invasive enrichment keyed by questionId. Canonical prompts/IDs remain LOCKED.",
+    "questions":  {
+
+                  }
+}
