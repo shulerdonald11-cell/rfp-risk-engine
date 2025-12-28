@@ -1,0 +1,173 @@
+{
+  "questions": [
+
+    {
+      "questionId": "A3",
+      "set": "core",
+      "order": 120,
+      "prompt": "Will the project be executed in multiple phases (e.g., pilot, rollout, zones)?",
+      "answerType": "single",
+      "options": ["Yes", "No", "Not sure"],
+      "defaultAnswer": "Yes",
+      "helperText": "Best practice: use a short pilot to validate integrations, billing, and customer outreach, then transition directly into full deployment without a gap in work to avoid contractor demobilization costs.",
+      "notePrompt": "In Notes, describe whether phasing is driven by funding limits or a pilot/proof-of-concept, identify funding sources, expected meter counts per phase, and whether the pilot is intended to roll directly into full deployment.",
+      "implications": [
+        "Phasing may be driven by funding constraints (annual budgets) or by implementation risk reduction (pilot/proof-of-concept).",
+        "Budget-driven phasing can increase contractor pricing due to repeated mobilization and staffing interruptions.",
+        "Pilot-driven phasing reduces billing, data, and integration risk when it transitions directly into full deployment.",
+        "Gaps between pilot and rollout often result in higher cost, schedule delays, or loss of trained installation crews."
+      ]
+    },
+
+    {
+      "questionId": "A4",
+      "set": "core",
+      "order": 130,
+      "prompt": "Are there any labor compliance or workforce requirements applicable to this project?",
+      "answerType": "multi",
+      "options": [
+        "State or local prevailing wage",
+        "Federal Davis-Bacon",
+        "Project Labor Agreement (PLA)",
+        "Union labor requirements (without PLA)",
+        "None",
+        "Not sure"
+      ],
+      "defaultAnswer": ["None"],
+      "helperText": "Best practice: disclose all labor compliance requirements and funding sources up front (prevailing wage / Davis-Bacon / PLA / union), because labor is a major driver of installation pricing.",
+      "notePrompt": "In Notes, include funding sources (grant/federal/state/local), whether Davis-Bacon/prevailing wage applies to all work or only funded portions, any known wage determinations/classifications, and whether a PLA/union labor requirement is in place.",
+      "implications": [
+        "Labor compliance requirements can materially change unit pricing; impacts vary by jurisdiction and wage classification.",
+        "If federal or grant funding applies, Davis-Bacon/prevailing wage requirements may be mandatory; uncertainty often results in higher contingency pricing.",
+        "Some jurisdictions allow or require advance action for a specific wage determination/classification; missing this step can increase cost.",
+        "PLA/union labor requirements can affect bidder pool, staffing strategy, and schedule flexibility."
+      ]
+    },
+
+    {
+      "questionId": "A5",
+      "set": "core",
+      "order": 140,
+      "prompt": "Are there any state or local licensing requirements for contractors performing meter installation work?",
+      "answerType": "single",
+      "options": ["Yes", "No", "Not sure"],
+      "defaultAnswer": "Yes",
+      "helperText": "Best practice: clearly identify all required state, county, or municipal licenses up front so only qualified contractors bid the project and award delays are avoided.",
+      "notePrompt": "In Notes, list all required licenses (state, county, or municipal), applicable trade classifications (e.g., plumbing, underground utility, Class A engineering), exam or registration requirements, and whether subcontractor licenses are acceptable.",
+      "implications": [
+        "Licensing requirements can determine whether a contractor is legally eligible to perform work in a given jurisdiction.",
+        "Inside-set work often triggers stricter licensing requirements than pit-only installations.",
+        "Unclear licensing requirements can delay award or result in contractor disqualification after bid.",
+        "City or county licensing may require advance registration or exams that affect bidder pool and schedule."
+      ]
+    },
+
+    {
+      "questionId": "A6",
+      "set": "core",
+      "order": 150,
+      "prompt": "Are there specific insurance requirements beyond standard utility contractor coverage?",
+      "answerType": "single",
+      "options": ["Yes", "No", "Not sure"],
+      "defaultAnswer": "No",
+      "helperText": "Best practice: clearly state standard insurance requirements up front and identify any additional coverage so contractors can confirm compliance and price risk appropriately.",
+      "notePrompt": "In Notes, list required coverage types and limits (e.g., workers’ comp, general liability, auto/fleet), any additional insured requirements, and whether inventory storage or material responsibility requires additional coverage.",
+      "implications": [
+        "Most installation contractors carry standard insurance such as workers’ compensation, general liability, and fleet/vehicle coverage.",
+        "Additional insurance requirements may require endorsements or higher limits and can affect pricing.",
+        "Professional liability insurance typically applies to engineering or design services and is not commonly carried by installation contractors.",
+        "Unclear or misaligned insurance requirements can reduce bidder participation or delay award."
+      ]
+    },
+
+    {
+      "questionId": "A7",
+      "set": "core",
+      "order": 160,
+      "prompt": "Are there any small business, MBE/WBE, DBE, or similar participation requirements?",
+      "answerType": "single",
+      "options": ["Yes", "No", "Not sure"],
+      "defaultAnswer": "No",
+      "helperText": "Best practice: clearly disclose any MBE/WBE/DBE or similar participation requirements so contractors understand bid scoring criteria, subcontracting expectations, and potential cost impacts.",
+      "notePrompt": "In Notes, identify applicable participation programs (MBE/WBE/DBE or similar), required percentages or goals, whether credits apply to bid scoring or contract compliance, and whether subcontracting to local firms is expected.",
+      "implications": [
+        "Participation requirements may provide bid or scoring advantages to certified firms or teams that include certified subcontractors.",
+        "Such requirements can expand participation by local or smaller firms but often require prime contractors to subcontract portions of work.",
+        "Subcontracting to meet participation goals may increase project cost and affect productivity or schedule.",
+        "Certified firms without direct AMI installation experience may carry higher pricing due to limited scale or systems.",
+        "If no participation requirements apply, stating this clearly avoids unnecessary bidder assumptions or contingency pricing."
+      ]
+    },
+
+    {
+      "questionId": "B1",
+      "set": "core",
+      "order": 200,
+      "prompt": "What existing meter reading system is currently in place for the meters in scope (to be removed/replaced)?",
+      "answerType": "single",
+      "options": [
+        "Direct Read (manual)",
+        "AMR (drive-by / mobile)",
+        "AMI (fixed network / cellular)",
+        "Mixed",
+        "Unknown"
+      ],
+      "helperText": "Installation and integration requirements vary significantly based on whether the current environment is direct read, AMR, or AMI. Provide what you know so bidders can plan compatibility, data handling, and removal steps correctly.",
+      "notePrompt": "In Notes, include the current vendor/platform (e.g., Itron, Badger, Sensus/Xylem), endpoint model/type (mobile vs fixed vs cellular), and whether endpoints are utility-owned or vendor-owned.",
+      "implications": [
+        "Legacy read system type affects removal steps, data handling, and transition planning.",
+        "Existing AMR/AMI environments may introduce coexistence or compatibility constraints during deployment.",
+        "Mixed or unknown legacy environments typically increase bid contingency and may warrant field validation or an asset data review."
+      ]
+    },
+
+    {
+      "questionId": "B1a",
+      "set": "core",
+      "order": 210,
+      "prompt": "Legacy vendor/platform details (recommended): What make/model(s) of endpoints and reading system are in use today?",
+      "answerType": "text",
+      "helperText": "Best practice: list vendors/platforms and endpoint models so bidders can confirm compatibility and plan transition steps.",
+      "notePrompt": "Include vendor/platform examples (Itron, Badger, Sensus/Xylem) and endpoint types (drive-by/mobile, fixed network, cellular), plus any known integrations or contract constraints.",
+      "implications": [
+        "More detail reduces contingency pricing and prevents surprises during cutover.",
+        "If details are unknown, consider an asset data review or sample field survey to confirm the legacy environment."
+      ]
+    },
+
+    {
+      "questionId": "B2",
+      "set": "core",
+      "order": 220,
+      "prompt": "What is the predominant material or construction of the existing water meters to be removed?",
+      "answerType": "single",
+      "options": ["Brass", "Plastic / composite", "Mixed", "Unknown"],
+      "helperText": "Understanding meter material helps bidders plan removal, recycling, and disposal. Material type can affect recycling value, handling requirements, and cost assumptions.",
+      "notePrompt": "In Notes, describe known meter brands/models, size ranges, solid-state vs mechanical construction, and any known recycling or salvage expectations.",
+      "implications": [
+        "Brass meters typically have salvage or recycling value that may offset project cost depending on disposal responsibility.",
+        "Plastic or composite meters generally have limited recycling value and may require standard disposal.",
+        "Mixed environments increase handling complexity and should be clarified in pricing.",
+        "Unknown material composition may justify field validation or conservative disposal assumptions."
+      ]
+    },
+
+    {
+      "questionId": "B2a",
+      "set": "core",
+      "order": 230,
+      "prompt": "Will removal of existing endpoints involve lithium or other regulated batteries requiring special disposal or recycling?",
+      "answerType": "single",
+      "options": ["Yes", "No", "Some / Partial", "Not sure"],
+      "helperText": "Existing AMI endpoints often contain lithium batteries that require regulated recycling or disposal. Clarifying scope and responsibility helps avoid unexpected disposal cost.",
+      "notePrompt": "In Notes, identify known endpoint types, estimated quantities, and whether battery disposal is expected to be utility-managed or contractor-managed.",
+      "implications": [
+        "Regulated battery recycling typically carries a per-unit disposal cost.",
+        "Partial AMI environments may require mixed handling approaches.",
+        "Responsibility for battery disposal may fall to the utility or contractor depending on scope definition.",
+        "Unclear battery handling requirements often result in contingency pricing."
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "byQuestionId": {
+    "C1": [
+      { "token": "OUTREACH_PRE_INSTALL", "whenAnswerEquals": "Pre-install notification" },
+      { "token": "OUTREACH_POST_INSTALL", "whenAnswerEquals": "Post-install notification" },
+      { "token": "OUTREACH_DOOR_HANGERS", "whenAnswerEquals": "Door hangers" },
+      { "token": "OUTREACH_NONE_SPECIFIED", "whenAnswerEquals": "None specified" },
+      { "token": "OUTREACH_NOT_SURE", "whenAnswerEquals": "Not sure" }
+    ],
+
+    "C2": [
+      { "token": "OUTREACH_OWNER_UTILITY", "whenAnswerEquals": "Utility" },
+      { "token": "OUTREACH_OWNER_CONTRACTOR", "whenAnswerEquals": "Contractor" },
+      { "token": "OUTREACH_OWNER_SHARED", "whenAnswerEquals": "Shared" },
+      { "token": "OUTREACH_OWNER_NOT_SURE", "whenAnswerEquals": "Not sure" }
+    ],
+
+    "C3": [
+      { "token": "LANG_OTHER_REQUIRED", "whenAnswerEquals": "Yes" },
+      { "token": "LANG_ENGLISH_ONLY", "whenAnswerEquals": "No" },
+      { "token": "LANG_NOT_DEFINED", "whenAnswerEquals": "Not sure" }
+    ],
+
+    "C4": [
+      { "token": "PIT_CALL_CENTER_REQUIRED", "whenAnswerEquals": "Yes" },
+      { "token": "PIT_CALL_CENTER_NOT_REQUIRED", "whenAnswerEquals": "No" },
+      { "token": "PIT_CALL_CENTER_NOT_DEFINED", "whenAnswerEquals": "Not sure" }
+    ],
+
+    "C5": [
+      { "token": "LEAVE_BEHIND_ADDITIONAL_REQUIRED", "whenAnswerEquals": "Yes" },
+      { "token": "LEAVE_BEHIND_STANDARD_ONLY", "whenAnswerEquals": "No" },
+      { "token": "LEAVE_BEHIND_NOT_DEFINED", "whenAnswerEquals": "Not sure" }
+    ],
+
+    "C6": [
+      { "token": "CONTENT_UTILITY_FINAL", "whenAnswerEquals": "Utility provides final approved content" },
+      { "token": "CONTENT_CONTRACTOR_DRAFT_UTILITY_APPROVES", "whenAnswerEquals": "Contractor drafts; utility approves final content" },
+      { "token": "CONTENT_CONTRACTOR_FINAL", "whenAnswerEquals": "Contractor provides final content (utility accepts as-is)" },
+      { "token": "CONTENT_NOT_DEFINED", "whenAnswerEquals": "Not defined / not sure" }
+    ],
+
+    "C7": [
+      { "token": "ENFORCEMENT_UIR_ONLY", "whenAnswerEquals": "Utility intervention required (UIR) process only" },
+      { "token": "ENFORCEMENT_FEES_ALLOWED", "whenAnswerEquals": "Utility fee / enforcement process may be used" },
+      { "token": "ENFORCEMENT_SHUTOFF_ALLOWED", "whenAnswerEquals": "Service shutoff may be used (where allowed)" },
+      { "token": "ENFORCEMENT_RTU_AFTER_ATTEMPTS", "whenAnswerEquals": "Return to utility (RTU) after defined attempts" },
+      { "token": "ENFORCEMENT_NOT_DEFINED", "whenAnswerEquals": "Not defined / not sure" }
+    ],
+
+    "C8": [
+      { "token": "UNRESOLVED_RTU_AFTER_ATTEMPTS", "whenAnswerEquals": "Returned to utility after defined attempts" },
+      { "token": "UNRESOLVED_CONTRACTOR_CONTINUES", "whenAnswerEquals": "Contractor continues attempts until resolved" },
+      { "token": "UNRESOLVED_COMPLETE_AFTER_THRESHOLD", "whenAnswerEquals": "Considered complete for contractor scope after defined threshold" },
+      { "token": "UNRESOLVED_NOT_DEFINED", "whenAnswerEquals": "Not defined / not sure" }
+    ],
+
+    "C9": [
+      { "token": "PAYMENT_COMPLETION_ONLY", "whenAnswerEquals": "Payment only for completed installs" },
+      { "token": "PAYMENT_PAY_FOR_UNSUCCESSFUL", "whenAnswerEquals": "Pay for unsuccessful attempts / return visits (defined rate)" },
+      { "token": "PAYMENT_PAY_AFTER_THRESHOLD", "whenAnswerEquals": "Pay after defined attempt threshold even if not completed (documented RTU/UIR)" },
+      { "token": "PAYMENT_NOT_DEFINED", "whenAnswerEquals": "Not defined / not sure" }
+    ]
+  }
+}

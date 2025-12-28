@@ -1,0 +1,308 @@
+{
+  "questions": [
+    {
+      "questionId": "B1",
+      "set": "core",
+      "order": 200,
+      "prompt": "What existing meter reading system is currently in place for the meters in scope (to be removed/replaced)?",
+      "answerType": "single",
+      "options": [
+        "Direct Read (manual)",
+        "AMR (drive-by / mobile)",
+        "AMI (fixed network / cellular)",
+        "Mixed",
+        "Unknown"
+      ],
+      "required": false,
+      "defaultAnswer": null,
+      "helperText": "Installation and integration requirements vary significantly based on whether the current environment is direct read, AMR, or AMI. Provide what you know so bidders can plan compatibility, data handling, and removal steps correctly.",
+      "notePrompt": "In Notes, include the current vendor/platform (e.g., Itron, Badger, Sensus/Xylem), endpoint model/type (mobile vs fixed vs cellular), and whether endpoints are utility-owned or vendor-owned. Also provide details related to the existing meter types to be removed: mechanical vs solid-state. This question is intended to capture what they know and what they have.",
+      "implications": [
+        "Legacy read system type affects removal steps, data handling, and transition planning.",
+        "Existing AMR/AMI environments may introduce coexistence or compatibility constraints during deployment.",
+        "Mixed or unknown legacy environments typically increase bid contingency and may warrant field validation or an asset data review."
+      ]
+    },
+    {
+      "questionId": "B1a",
+      "set": "core",
+      "order": 210,
+      "prompt": "Legacy vendor/platform details (recommended): What make/model(s) of endpoints and reading system are in use today?",
+      "answerType": "text",
+      "required": false,
+      "defaultAnswer": null,
+      "helperText": "Best practice: list vendors/platforms and endpoint models so bidders can confirm compatibility and plan transition steps.",
+      "notePrompt": "Include vendor/platform examples (Itron, Badger, Sensus/Xylem) and endpoint types (drive-by/mobile, fixed network, cellular), plus any known integrations or contract constraints.",
+      "implications": [
+        "More detail reduces contingency pricing and prevents surprises during cutover.",
+        "If details are unknown, consider an asset data review or sample field survey to confirm the legacy environment."
+      ]
+    },
+    {
+      "questionId": "B2",
+      "set": "core",
+      "order": 220,
+      "prompt": "What is the predominant material or construction of the existing water meters to be removed?",
+      "answerType": "single",
+      "options": [
+        "Brass",
+        "Plastic / composite",
+        "Mixed",
+        "Unknown"
+      ],
+      "required": false,
+      "defaultAnswer": null,
+      "helperText": "Understanding meter material helps bidders plan removal, recycling, and disposal. Material type can affect recycling value, handling requirements, and cost assumptions.",
+      "notePrompt": "In Notes, describe known meter brands/models, size ranges, solid-state vs mechanical construction, and any known recycling or salvage expectations.",
+      "implications": [
+        "Brass meters typically have salvage or recycling value that may offset project cost depending on disposal responsibility.",
+        "Plastic or composite meters generally have limited recycling value and may require standard disposal.",
+        "Mixed environments increase handling complexity and should be clarified in pricing.",
+        "Unknown material composition may justify field validation or conservative disposal assumptions."
+      ]
+    },
+    {
+      "questionId": "B2a",
+      "set": "core",
+      "order": 230,
+      "prompt": "Will removal of existing endpoints involve lithium or other regulated batteries requiring special disposal or recycling?",
+      "answerType": "single",
+      "options": [
+        "Yes",
+        "No",
+        "Some / Partial",
+        "Not sure"
+      ],
+      "required": false,
+      "defaultAnswer": null,
+      "helperText": "Existing AMI endpoints often contain lithium batteries that require regulated recycling or disposal. Clarifying scope and responsibility helps avoid unexpected disposal cost.",
+      "notePrompt": "In Notes, identify known endpoint types, estimated quantities, and whether battery disposal is expected to be utility-managed or contractor-managed.",
+      "implications": [
+        "Regulated battery recycling typically carries a per-unit disposal cost.",
+        "Partial AMI environments may require mixed handling approaches.",
+        "Responsibility for battery disposal may fall to the utility or contractor depending on scope definition.",
+        "Unclear battery handling requirements often result in contingency pricing."
+      ]
+    },
+    {
+      "questionId": "B3",
+      "set": "core",
+      "order": 240,
+      "prompt": "Will the utility provide service-level or asset-level data to support installation planning?",
+      "answerType": "single",
+      "options": [
+        "Yes — complete and reliable",
+        "Yes — partial",
+        "No",
+        "Not sure"
+      ],
+      "required": false,
+      "defaultAnswer": null,
+      "helperText": "Service-level and asset-level data allows contractors to plan materials, load trucks appropriately, and reduce failed installations. The completeness and reliability of this data directly affects productivity, cost, and whether field surveys may be required.",
+      "notePrompt": "In Notes, describe available data such as meter location, lid types, yoke setter configuration (including expansion wheels), fittings, known plumbing conditions, accuracy concerns, and how current the data is.",
+      "implications": [
+        "Yes — complete and reliable: Enables efficient material planning and reduces field uncertainty.",
+        "Yes — partial: May support planning but often requires validation or supplemental surveys.",
+        "No: Strong indicator that a field survey or contingency-based pricing may be required.",
+        "Not sure: Indicates data readiness risk and typically justifies validation discussions.",
+        "Incomplete or unreliable data does not prevent RFP generation, but it may affect assumptions, pricing, and recommended pre-deployment activities."
+      ]
+    },
+    {
+      "questionId": "B3a",
+      "set": "core",
+      "order": 250,
+      "prompt": "If data is provided, which of the following elements are included? (Select all that apply)",
+      "answerType": "multi",
+      "options": [
+        "Service address / location",
+        "Meter size",
+        "Meter pit or set type",
+        "Lid type",
+        "Yoke setter configuration (including expansion wheels)",
+        "Plumbing notes or special conditions",
+        "GPS coordinates",
+        "Route or read sequence information",
+        "Other / varies by area"
+      ],
+      "required": false,
+      "defaultAnswer": null,
+      "helperText": "The specific data elements provided determine how accurately contractors can plan materials, routes, and crew workflows. Missing elements may require field validation or conservative assumptions.",
+      "notePrompt": "In Notes, describe known gaps, inconsistencies, or confidence levels in the data. Include anything not captured above that may affect material planning or installation execution.",
+      "implications": [
+        "Broader data coverage improves installation efficiency and pricing confidence.",
+        "Missing or inconsistent elements increase field uncertainty and survey likelihood.",
+        "Variability by area often leads to phased validation approaches (e.g., lids-only surveys)."
+      ]
+    },
+    {
+      "questionId": "B4",
+      "set": "core",
+      "order": 260,
+      "prompt": "How should existing service-level or asset-level data be relied upon for installation planning and deployment?",
+      "answerType": "single",
+      "options": [
+        "Utility-provided data should be assumed accurate and used for planning",
+        "Utility-provided data is informational only and requires field validation",
+        "Data will be refined or validated prior to deployment (survey or prep phase)",
+        "Not defined / not sure"
+      ],
+      "required": false,
+      "defaultAnswer": null,
+      "helperText": "Installation contractors base pricing and staffing on assumed efficiency derived from planning data.\n\nIf utility-provided data is used for planning and later determined to be inaccurate or incomplete, this may result in reduced productivity, additional site visits, or rework. These conditions typically lead to one of the following outcomes:\n- Change orders or scope adjustments requested by the contractor, or\n- Contingency pricing built into the contractor’s bid to absorb uncertainty.\n\nIf data accuracy is uncertain, upfront validation or a targeted field survey is often recommended to reduce cost and schedule risk and avoid inflated pricing or post-award changes.",
+      "notePrompt": "In Notes, describe confidence levels, known data gaps, prior validation efforts, or expectations for resolving discrepancies discovered during installation.",
+      "implications": [
+        "Assumed accurate: Enables efficient planning but places risk on the utility if data proves incorrect.",
+        "Informational only: Indicates validation is required to protect contractor productivity.",
+        "Refined prior to deployment: Reduces downstream change orders and pricing contingencies.",
+        "Not defined / not sure: Risk must be absorbed either through contingency pricing or post-award scope adjustments."
+      ]
+    },
+    {
+      "questionId": "B5",
+      "set": "core",
+      "order": 270,
+      "prompt": "How frequently will service-level or asset-level data be updated or refreshed during the project?",
+      "answerType": "single",
+      "options": [
+        "One-time static file (no regular updates)",
+        "Periodic updates (e.g., weekly or monthly)",
+        "Frequent or ongoing updates (e.g., daily or near real-time)",
+        "Not defined / not sure"
+      ],
+      "required": false,
+      "defaultAnswer": null,
+      "helperText": "Data update frequency affects installation planning accuracy, integration effort, and overall project efficiency.\n\nShort-duration projects or small meter counts may be successfully managed with a one-time or periodic data file. Longer-duration projects are more likely to experience customer turnover, routine maintenance changes, and meter activity that require more frequent updates.\n\nMore frequent updates can improve accuracy but may increase integration complexity or cost depending on utility systems and contractor capabilities.",
+      "notePrompt": "In Notes, describe expected project duration, meter volumes, preferred data transfer method (e.g., SFTP, portal, spreadsheet), system limitations, and any known integration constraints or concerns.",
+      "implications": [
+        "One-time static file: Often sufficient for small or short-duration projects but may require manual exception handling as conditions change.",
+        "Periodic updates: Balances accuracy and effort for mid-sized projects with moderate operational change.",
+        "Frequent or ongoing updates: Best supports longer-duration deployments but may require automated file transfer, system integration, or additional setup cost.",
+        "Not defined / not sure: Indicates workflow uncertainty and may result in conservative pricing or additional coordination effort."
+      ]
+    },
+    {
+      "questionId": "B6",
+      "set": "core",
+      "order": 280,
+      "prompt": "How will service-level or asset-level data be exchanged between the utility and the installation contractor during the project?",
+      "answerType": "single",
+      "options": [
+        "Automated system integration (API or system-to-system)",
+        "Secure file transfer (e.g., SFTP)",
+        "Contractor or utility portal (download/upload)",
+        "Spreadsheet or manual file exchange (e.g., Excel)",
+        "Not defined / not sure"
+      ],
+      "required": false,
+      "defaultAnswer": null,
+      "helperText": "The data exchange method affects integration cost, setup effort, and ongoing coordination between the utility and the installation contractor.\n\nMore automated approaches can improve efficiency but often require greater upfront technical effort. Simpler methods may be easier to manage for smaller or less technically resourced utilities but can increase manual effort or risk of delay.",
+      "notePrompt": "In Notes, describe the preferred or acceptable data exchange method(s), any system limitations, security requirements, and what the utility or contractor is most comfortable supporting.",
+      "implications": [
+        "Automated integration (API): Highly sophisticated and efficient once established, but typically involves the greatest upfront integration effort and cost.",
+        "Secure file transfer (SFTP): Often preferred, as it allows automated file drops by the contractor and flexible retrieval by the utility; suitable for both large and small projects when supported.",
+        "Portal-based exchange: Effective when utilities lack the capability or resources to manage SFTP; typically easier to adopt but may require more manual interaction.",
+        "Spreadsheet/manual exchange: Common for smaller utilities or short-duration projects; lowest technical barrier but higher ongoing manual effort.",
+        "Not defined / not sure: Indicates workflow uncertainty and may lead to conservative assumptions or additional coordination effort."
+      ]
+    },
+    {
+      "questionId": "B6a",
+      "set": "core",
+      "order": 290,
+      "prompt": "Will utility-provided data specify the required work type at each service location (e.g., meter change, endpoint-only, register-only)?",
+      "answerType": "single",
+      "options": [
+        "Yes — work type will be specified and may change over time",
+        "Yes — work type will be specified and remain fixed",
+        "No — contractor determines work scope in the field",
+        "Not defined / not sure"
+      ],
+      "required": false,
+      "defaultAnswer": null,
+      "helperText": "Some utilities provide data files that not only identify service locations but also specify the exact work to be performed at each location.\n\nWhile this can reduce discovery effort or survey requirements, it may increase integration complexity and affect contractor planning efficiency, particularly if work types change during the project.",
+      "notePrompt": "In Notes, describe how work types are defined, how often they may change, and whether changes are expected during the project lifecycle.",
+      "implications": [
+        "Specified, changing work types: Highest integration complexity; may reduce field discovery but can reduce planning efficiency and increase cost.",
+        "Specified, fixed work types: Supports structured execution when data is reliable and stable.",
+        "Contractor-determined scope: Greater field flexibility but may require survey or audit activities.",
+        "Not defined / not sure: Signals execution ambiguity and may lead to conservative pricing or additional clarification."
+      ]
+    },
+    {
+      "questionId": "B7",
+      "set": "core",
+      "order": 300,
+      "prompt": "When data discrepancies or system exceptions are identified during or after installation, how should reconciliation and corrective actions be handled?",
+      "answerType": "single",
+      "options": [
+        "Contractor corrects data and resubmits through defined process",
+        "Contractor flags issue; utility reviews, corrects, and reissues data",
+        "Bidirectional exception reporting with defined reconciliation workflow",
+        "Formal exception and approval workflow required before proceeding",
+        "Not defined / not sure"
+      ],
+      "required": false,
+      "defaultAnswer": null,
+      "helperText": "Data discrepancies may originate from field conditions, data entry errors, or system validation rules.\n\nIn mature deployments, exceptions may generate automated reports, reconciliation tasks, or action-required workflows on either the contractor or utility side.",
+      "notePrompt": "In Notes, describe how exception reports are generated, tracked, reconciled, and closed, including which party is responsible for corrective action and expected response times.",
+      "implications": [
+        "Contractor corrects and resubmits: Requires contractor systems capable of managing correction cycles.",
+        "Utility reviews and reissues data: Reduces contractor risk but may slow execution and increase revisits.",
+        "Bidirectional reconciliation workflow: Best suited for larger programs with mature WOMS and defined SLAs.",
+        "Formal exception approval required: Strong governance but highest administrative overhead.",
+        "Not defined: High likelihood of inefficiency, disputed responsibility, or change orders."
+      ]
+    },
+    {
+      "questionId": "B8",
+      "set": "core",
+      "order": 310,
+      "prompt": "Will a pre-deployment field survey or audit be required to validate asset data, site conditions, or work scope prior to installation?",
+      "answerType": "single",
+      "options": [
+        "Yes — full survey required before installation",
+        "Yes — limited survey (specific elements only)",
+        "No — rely on existing data; contractor proceeds",
+        "Survey to be proposed as an optional add-alternate",
+        "Not defined / to be determined"
+      ],
+      "required": false,
+      "defaultAnswer": null,
+      "helperText": "Field surveys are commonly used to validate data accuracy, confirm site conditions, and reduce execution risk.\n\nCertain AMI systems may impose specific requirements related to pit or vault conditions, including lid size, material, condition, and whether drilling, cutting, or lid replacement is required.\n\nThese factors should be considered when determining the appropriate level of survey needed.",
+      "notePrompt": "In Notes, describe known or suspected pit, vault, or lid conditions, AMI system requirements, and any concerns driving the survey decision.",
+      "implications": [
+        "Full survey required: Recommended when lid conditions, pit depths, or vault configurations are unknown or when AMI hardware has strict installation requirements.",
+        "Limited survey: Often appropriate when focusing on high-risk elements such as lids, pit depths, or access constraints.",
+        "No survey: Faster mobilization but higher likelihood of contingencies related to unforeseen lid modifications or pit conditions.",
+        "Optional add-alternate: Allows bidders to price both risk profiles and gives the utility flexibility post-award.",
+        "Not defined: Contractors will assume conservative conditions or include contingency pricing."
+      ]
+    },
+    {
+      "questionId": "B9",
+      "set": "core",
+      "order": 320,
+      "prompt": "If a pre-deployment survey or audit is performed, who will be responsible for executing it and funding it?",
+      "answerType": "single",
+      "options": [
+        "Utility performs and funds the survey",
+        "Contractor performs; utility funds",
+        "Contractor performs and funds",
+        "Shared responsibility (defined by scope)",
+        "Not defined / to be determined"
+      ],
+      "required": false,
+      "defaultAnswer": null,
+      "helperText": "Survey execution and funding directly affect accountability for data accuracy, material planning, and change order risk.\n\nThe party performing the survey is typically best positioned to validate field conditions, determine material needs, and manage downstream execution risk.",
+      "notePrompt": "In Notes, describe survey scope, data elements collected (e.g., lids only vs full pit inspection), material responsibility, and how survey accuracy will be validated and used for procurement. If the survey is to be paid as a contract line item, describe whether pricing should be per unit, and whether categories such as small, intermediate, and large should apply based on data collected and survey scope complexity.",
+      "implications": [
+        "Utility performs and funds: Utility retains responsibility for data accuracy; inaccuracies may result in material shortages, inefficiencies, or change orders.",
+        "Contractor performs; utility funds: Aligns accountability with execution. Contractor validates conditions, plans materials accurately, and assumes responsibility for procurement decisions.",
+        "Contractor performs and funds: Contractor will recover cost through unit pricing or contingency allowances.",
+        "Shared responsibility: Requires very clear definition of data ownership, procurement responsibility, and risk allocation.",
+        "Not defined: Contractors will assume risk conservatively, increasing bid pricing or requesting clarification."
+      ]
+    }
+  ]
+}

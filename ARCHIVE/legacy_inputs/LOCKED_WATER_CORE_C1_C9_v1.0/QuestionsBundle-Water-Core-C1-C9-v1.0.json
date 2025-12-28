@@ -1,0 +1,205 @@
+{
+  "questions": [
+    {
+      "questionId": "C1",
+      "set": "core",
+      "order": 330,
+      "prompt": "What customer notification or outreach activities are required? (Select all that apply)",
+      "answerType": "multi",
+      "options": [
+        "Pre-install notification",
+        "Post-install notification",
+        "Door hangers",
+        "None specified",
+        "Not sure"
+      ],
+      "required": false,
+      "defaultAnswer": ["Post-install notification"],
+      "helperText": "Best practice: Use mailers/postcards for pre-install notification when required, and use a post-install door hanger to confirm the work performed, provide flushing instructions, and provide contact information. Door hangers used as advance notice typically add cost because they require an extra site visit.",
+      "notePrompt": "In Notes, describe PIT vs inside-set differences, how many pre-notice attempts are required (1st/2nd/final), timing (days between notices), whether commercial meters require appointment coordination, and whether enforcement steps (fees/shutoff) are allowed after defined no-response thresholds.",
+      "implications": [
+        "Pre-install outreach helps reduce customer complaints and confusion (especially for pit-set installs where technicians are on private property).",
+        "Door hangers used as advance notice increase labor cost and reduce installation efficiency because they can require additional site visits.",
+        "Indoor access programs typically require sequenced mailers aligned to call center capacity to drive scheduling and maximize completion.",
+        "Commercial meters often require direct coordination regardless of the standard notification plan.",
+        "Unclear notification rules often lead to incomplete installs, schedule delays, or contractor contingency pricing."
+      ]
+    },
+
+    {
+      "questionId": "C2",
+      "set": "core",
+      "order": 340,
+      "prompt": "Who is responsible for customer outreach materials and distribution / scheduling communications?",
+      "answerType": "single",
+      "options": [
+        "Utility",
+        "Contractor",
+        "Shared",
+        "Not sure"
+      ],
+      "required": false,
+      "defaultAnswer": "Contractor",
+      "helperText": "Best practice: Indoor access/scheduling outreach should be contractor-led so the contractor can control sequencing, call center load, and appointment booking. For pit-set work, utility-led pre-notification can be acceptable if appointments are not required.",
+      "notePrompt": "In Notes, describe PIT vs inside-set differences. If utility wants to control notifications, describe how sequencing will be managed so appointment slots remain booked and field productivity is not reduced.",
+      "implications": [
+        "If utility controls indoor outreach and cannot keep appointment slots booked, contractor productivity and completion rates can suffer.",
+        "Contractor-led outreach for indoor sets supports sequenced mailers and schedule control, reducing idle crews and revisits.",
+        "Split responsibility requires explicit handoffs; ambiguity can cause delays, disputes, or change orders."
+      ]
+    },
+
+    {
+      "questionId": "C3",
+      "set": "core",
+      "order": 350,
+      "prompt": "Are outreach materials required in languages other than English?",
+      "answerType": "single",
+      "options": [
+        "Yes",
+        "No",
+        "Not sure"
+      ],
+      "required": false,
+      "defaultAnswer": "No",
+      "helperText": "Best practice: Identify language requirements up front so bidders can plan translation, printing, and call-center staffing accordingly.",
+      "notePrompt": "In Notes, list required languages and whether the utility will provide approved translations/templates or expects the contractor to produce them for utility approval.",
+      "implications": [
+        "Additional language requirements increase printing, translation, call center staffing complexity, and cost.",
+        "Unclear language requirements often result in higher contingency pricing or schedule risk during mobilization."
+      ]
+    },
+
+    {
+      "questionId": "C4",
+      "set": "core",
+      "order": 360,
+      "prompt": "Will the contractor be required to provide customer support or a call center for PIT-set installations?",
+      "answerType": "single",
+      "options": [
+        "Yes",
+        "No",
+        "Not sure"
+      ],
+      "required": false,
+      "defaultAnswer": "No",
+      "helperText": "Best practice: Inside-set programs require contractor call center + dispatch. This question is primarily to confirm whether similar requirements apply to pit-set work (often limited to day-of-install issues).",
+      "notePrompt": "In Notes, describe expected hours of coverage, issue types handled (day-of-install only vs full support), and how calls/escalations will be routed between the utility and contractor.",
+      "implications": [
+        "Contractor call center requirements increase bid cost and overhead.",
+        "Ambiguity about customer support responsibilities is a common source of scope disputes."
+      ]
+    },
+
+    {
+      "questionId": "C5",
+      "set": "core",
+      "order": 370,
+      "prompt": "Are there any additional leave-behind materials required after an installation (beyond a standard door hanger)?",
+      "answerType": "single",
+      "options": [
+        "Yes",
+        "No",
+        "Not sure"
+      ],
+      "required": false,
+      "defaultAnswer": "No",
+      "helperText": "Best practice: A post-install door hanger is standard and cost-effective. If additional materials are required, the utility should provide approved content; the contractor may provide examples, but final approval should be utility-controlled prior to printing.",
+      "notePrompt": "In Notes, describe what must be left behind (door hanger, brochure, flushing instructions, contact sheet), whether it differs for inside vs pit, and whether the utility will provide the final approved content for printing.",
+      "implications": [
+        "Additional leave-behind materials increase printing and distribution cost and may affect installation cycle time.",
+        "Content approval delays can delay mobilization; scope should clearly define who owns content and approvals."
+      ]
+    },
+
+    {
+      "questionId": "C6",
+      "set": "core",
+      "order": 380,
+      "prompt": "If the contractor is distributing outreach or leave-behind materials, who provides the final approved content?",
+      "answerType": "single",
+      "options": [
+        "Utility provides final approved content",
+        "Contractor drafts; utility approves final content",
+        "Contractor provides final content (utility accepts as-is)",
+        "Not defined / not sure"
+      ],
+      "required": false,
+      "defaultAnswer": "Contractor drafts; utility approves final content",
+      "helperText": "Best practice: The contractor can provide draft templates, but the utility should approve final content before printing and distribution to avoid customer issues and ensure regulatory/communications alignment.",
+      "notePrompt": "In Notes, describe approval workflow, branding requirements, and who pays for printing and distribution.",
+      "implications": [
+        "If content ownership/approval is not defined, mobilization may be delayed and costs may increase.",
+        "Utility approval reduces risk of customer complaints, regulatory misstatements, or inconsistent messaging."
+      ]
+    },
+
+    {
+      "questionId": "C7",
+      "set": "core",
+      "order": 390,
+      "prompt": "If access cannot be obtained or a location cannot be completed, what enforcement or escalation mechanisms may be used to achieve full program completion?",
+      "answerType": "single",
+      "options": [
+        "Utility intervention required (UIR) process only",
+        "Utility fee / enforcement process may be used",
+        "Service shutoff may be used (where allowed)",
+        "Return to utility (RTU) after defined attempts",
+        "Not defined / not sure"
+      ],
+      "required": false,
+      "defaultAnswer": "Return to utility (RTU) after defined attempts",
+      "helperText": "Best practice: Define thresholds and escalation paths up front. Without a mechanism to drive access and completion, completion rates commonly plateau and the program may stall.",
+      "notePrompt": "In Notes, describe the number of attempts/notifications before RTU/UIR, whether fees/shutoffs are allowed, and how refusals/no-response/vacant properties are handled.",
+      "implications": [
+        "Undefined enforcement/escalation paths often reduce completion rates and increase contractor risk/contingency pricing.",
+        "Clear UIR/RTU processes reduce disputes and protect field productivity."
+      ]
+    },
+
+    {
+      "questionId": "C8",
+      "set": "core",
+      "order": 400,
+      "prompt": "How should the program treat unresolved locations for workflow closure purposes (e.g., no-response, refusal, access issues)?",
+      "answerType": "single",
+      "options": [
+        "Returned to utility after defined attempts",
+        "Contractor continues attempts until resolved",
+        "Considered complete for contractor scope after defined threshold",
+        "Not defined / not sure"
+      ],
+      "required": false,
+      "defaultAnswer": "Returned to utility after defined attempts",
+      "helperText": "Best practice: Define a clear threshold and a consistent disposition (UIR/RTU) so crews can maintain productivity and the program can progress without endless revisits.",
+      "notePrompt": "In Notes, define thresholds, documentation expectations, and whether any unresolved categories require special handling (commercial, safety, locked gates, etc.).",
+      "implications": [
+        "If unresolved locations block closure/progression, productivity drops and project timelines slip.",
+        "If unresolved locations are returned after defined thresholds, risk shifts to utility enforcement and scheduling processes."
+      ]
+    },
+
+    {
+      "questionId": "C9",
+      "set": "core",
+      "order": 410,
+      "prompt": "How should unsuccessful attempts or unresolved locations be treated commercially (payment / revisits / closeout)?",
+      "answerType": "single",
+      "options": [
+        "Payment only for completed installs",
+        "Pay for unsuccessful attempts / return visits (defined rate)",
+        "Pay after defined attempt threshold even if not completed (documented RTU/UIR)",
+        "Not defined / not sure"
+      ],
+      "required": false,
+      "defaultAnswer": "Pay after defined attempt threshold even if not completed (documented RTU/UIR)",
+      "helperText": "Best practice: Align payment rules with the notification and enforcement plan. If payment is completion-only but access enforcement is weak, contractors will add contingency pricing or disputes will occur.",
+      "notePrompt": "In Notes, define payment rules for RTU/UIR, no-response, refusals, safety, locked gates, and whether return visits are payable and under what conditions.",
+      "implications": [
+        "Completion-only payment increases contractor risk for indoor programs unless outreach/enforcement is strong; risk is often priced as contingency.",
+        "Defined payable thresholds for unsuccessful attempts reduce disputes and support realistic pricing.",
+        "Ambiguity commonly results in change orders or bid inflation."
+      ]
+    }
+  ]
+}

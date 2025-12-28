@@ -1,3 +1,7 @@
+NOTE:
+This version (v0.9) is deprecated.
+See MASTER_UNIVERSE_SPEC_v1.0.md for the authoritative specification.
+
 # MASTER UNIVERSE SPECIFICATION v0.9
 
 ## RFP Risk & Scope Engine — Water AMI Installation (Domain v1.0)

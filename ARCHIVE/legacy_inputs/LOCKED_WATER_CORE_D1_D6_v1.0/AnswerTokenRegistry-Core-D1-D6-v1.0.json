@@ -1,0 +1,52 @@
+{
+  "byQuestionId": {
+    "D1": [
+      { "token": "MATERIAL_CUSTODY_UTILITY", "whenAnswerEquals": "Utility" },
+      { "token": "MATERIAL_CUSTODY_CONTRACTOR", "whenAnswerEquals": "Contractor" },
+      { "token": "MATERIAL_CUSTODY_SHARED", "whenAnswerEquals": "Shared" },
+      { "token": "MATERIAL_CUSTODY_UNKNOWN", "whenAnswerEquals": "Not sure" }
+    ],
+    "D2": [
+      { "token": "STAGING_UTILITY", "whenAnswerEquals": "Yes — utility-provided" },
+      { "token": "STAGING_CONTRACTOR", "whenAnswerEquals": "Yes — contractor-provided" },
+      { "token": "STAGING_REGIONAL", "whenAnswerEquals": "Multiple regional staging locations" },
+      { "token": "STAGING_NONE", "whenAnswerEquals": "No centralized staging" },
+      { "token": "STAGING_UNKNOWN", "whenAnswerEquals": "Not sure" }
+    ],
+    "D3": [
+      { "token": "DISPOSAL_UTILITY", "whenAnswerEquals": "Utility" },
+      { "token": "DISPOSAL_CONTRACTOR", "whenAnswerEquals": "Contractor" },
+      { "token": "DISPOSAL_SHARED", "whenAnswerEquals": "Shared" },
+      { "token": "DISPOSAL_RETURN_INVENTORY", "whenAnswerEquals": "Materials will be returned to utility inventory" },
+      { "token": "DISPOSAL_UNKNOWN", "whenAnswerEquals": "Not sure" }
+    ],
+    "D3a": [
+      { "token": "SPECIAL_HANDLING_LITHIUM", "whenAnswerEquals": "Yes — lithium batteries only" },
+      { "token": "SPECIAL_HANDLING_ELECTRONICS", "whenAnswerEquals": "Yes — electronic components only" },
+      { "token": "SPECIAL_HANDLING_BOTH", "whenAnswerEquals": "Yes — both lithium batteries and electronic components" },
+      { "token": "SPECIAL_HANDLING_NONE", "whenAnswerEquals": "No special handling required" },
+      { "token": "SPECIAL_HANDLING_UNKNOWN", "whenAnswerEquals": "Not sure" }
+    ],
+    "D4": [
+      { "token": "LOSS_RISK_UTILITY", "whenAnswerEquals": "Utility" },
+      { "token": "LOSS_RISK_CONTRACTOR", "whenAnswerEquals": "Contractor" },
+      { "token": "LOSS_RISK_SHARED", "whenAnswerEquals": "Shared" },
+      { "token": "LOSS_RISK_UNKNOWN", "whenAnswerEquals": "Not sure" }
+    ],
+    "D5": [
+      { "token": "DELIVERY_BULK", "whenAnswerEquals": "Bulk delivery (upfront or early)" },
+      { "token": "DELIVERY_PHASED", "whenAnswerEquals": "Phased delivery aligned to deployment schedule" },
+      { "token": "DELIVERY_HYBRID", "whenAnswerEquals": "Hybrid (initial bulk, then phased)" },
+      { "token": "DELIVERY_UNKNOWN", "whenAnswerEquals": "Not sure" }
+    ],
+    "D6": [
+      { "token": "CONSTRAINTS_PRESENT", "whenAnswerEquals": "Environmental or hazardous material regulations" },
+      { "token": "CONSTRAINTS_LOCAL", "whenAnswerEquals": "Local ordinances (zoning, hours, traffic)" },
+      { "token": "CONSTRAINTS_UTILITY_FACILITY", "whenAnswerEquals": "Utility-owned facility constraints" },
+      { "token": "CONSTRAINTS_DISPOSAL", "whenAnswerEquals": "Landfill, recycling, or approved-vendor restrictions" },
+      { "token": "CONSTRAINTS_SPACE", "whenAnswerEquals": "Space or footprint limitations" },
+      { "token": "CONSTRAINTS_NONE", "whenAnswerEquals": "None known" },
+      { "token": "CONSTRAINTS_UNKNOWN", "whenAnswerEquals": "Not sure" }
+    ]
+  }
+}

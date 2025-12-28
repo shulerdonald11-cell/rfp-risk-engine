@@ -1,0 +1,60 @@
+{
+  "byQuestionId": {
+
+    "A3": [
+      { "token": "PHASED_DEPLOYMENT", "whenAnswerEquals": "Yes" },
+      { "token": "SINGLE_PHASE_DEPLOYMENT", "whenAnswerEquals": "No" },
+      { "token": "PHASING_NOT_DEFINED", "whenAnswerEquals": "Not sure" }
+    ],
+
+    "A4": [
+      { "token": "LABOR_PREVAILING_WAGE", "whenAnswerEquals": "State or local prevailing wage" },
+      { "token": "LABOR_DAVIS_BACON", "whenAnswerEquals": "Federal Davis-Bacon" },
+      { "token": "LABOR_PLA", "whenAnswerEquals": "Project Labor Agreement (PLA)" },
+      { "token": "LABOR_UNION_REQUIRED", "whenAnswerEquals": "Union labor requirements (without PLA)" },
+      { "token": "LABOR_NONE_SPECIFIED", "whenAnswerEquals": "None" },
+      { "token": "LABOR_NOT_SURE", "whenAnswerEquals": "Not sure" }
+    ],
+
+    "A5": [
+      { "token": "LICENSE_REQUIRED", "whenAnswerEquals": "Yes" },
+      { "token": "LICENSE_NOT_REQUIRED", "whenAnswerEquals": "No" },
+      { "token": "LICENSE_NOT_DEFINED", "whenAnswerEquals": "Not sure" }
+    ],
+
+    "A6": [
+      { "token": "INSURANCE_ADDITIONAL_REQUIRED", "whenAnswerEquals": "Yes" },
+      { "token": "INSURANCE_STANDARD_ONLY", "whenAnswerEquals": "No" },
+      { "token": "INSURANCE_NOT_DEFINED", "whenAnswerEquals": "Not sure" }
+    ],
+
+    "A7": [
+      { "token": "PARTICIPATION_REQUIREMENT_PRESENT", "whenAnswerEquals": "Yes" },
+      { "token": "PARTICIPATION_NOT_REQUIRED", "whenAnswerEquals": "No" },
+      { "token": "PARTICIPATION_NOT_DEFINED", "whenAnswerEquals": "Not sure" }
+    ],
+
+    "B1": [
+      { "token": "LEGACY_SYSTEM_DIRECT_READ", "whenAnswerEquals": "Direct Read (manual)" },
+      { "token": "LEGACY_SYSTEM_AMR", "whenAnswerEquals": "AMR (drive-by / mobile)" },
+      { "token": "LEGACY_SYSTEM_AMI", "whenAnswerEquals": "AMI (fixed network / cellular)" },
+      { "token": "LEGACY_SYSTEM_MIXED", "whenAnswerEquals": "Mixed" },
+      { "token": "LEGACY_SYSTEM_UNKNOWN", "whenAnswerEquals": "Unknown" }
+    ],
+
+    "B2": [
+      { "token": "METER_MATERIAL_BRASS", "whenAnswerEquals": "Brass" },
+      { "token": "METER_MATERIAL_PLASTIC", "whenAnswerEquals": "Plastic / composite" },
+      { "token": "METER_MATERIAL_MIXED", "whenAnswerEquals": "Mixed" },
+      { "token": "METER_MATERIAL_UNKNOWN", "whenAnswerEquals": "Unknown" }
+    ],
+
+    "B2a": [
+      { "token": "BATTERY_DISPOSAL_REQUIRED", "whenAnswerEquals": "Yes" },
+      { "token": "BATTERY_DISPOSAL_NOT_REQUIRED", "whenAnswerEquals": "No" },
+      { "token": "BATTERY_DISPOSAL_PARTIAL", "whenAnswerEquals": "Some / Partial" },
+      { "token": "BATTERY_DISPOSAL_NOT_DEFINED", "whenAnswerEquals": "Not sure" }
+    ]
+
+  }
+}

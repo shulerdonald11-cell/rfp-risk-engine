@@ -1,0 +1,86 @@
+{
+  "byQuestionId": {
+    "B1": [
+      { "token": "LEGACY_SYSTEM_DIRECT_READ", "whenAnswerEquals": "Direct Read (manual)" },
+      { "token": "LEGACY_SYSTEM_AMR", "whenAnswerEquals": "AMR (drive-by / mobile)" },
+      { "token": "LEGACY_SYSTEM_AMI", "whenAnswerEquals": "AMI (fixed network / cellular)" },
+      { "token": "LEGACY_SYSTEM_MIXED", "whenAnswerEquals": "Mixed" },
+      { "token": "LEGACY_SYSTEM_UNKNOWN", "whenAnswerEquals": "Unknown" }
+    ],
+    "B2": [
+      { "token": "METER_MATERIAL_BRASS", "whenAnswerEquals": "Brass" },
+      { "token": "METER_MATERIAL_PLASTIC", "whenAnswerEquals": "Plastic / composite" },
+      { "token": "METER_MATERIAL_MIXED", "whenAnswerEquals": "Mixed" },
+      { "token": "METER_MATERIAL_UNKNOWN", "whenAnswerEquals": "Unknown" }
+    ],
+    "B2a": [
+      { "token": "BATTERY_DISPOSAL_REQUIRED", "whenAnswerEquals": "Yes" },
+      { "token": "BATTERY_DISPOSAL_NOT_REQUIRED", "whenAnswerEquals": "No" },
+      { "token": "BATTERY_DISPOSAL_PARTIAL", "whenAnswerEquals": "Some / Partial" },
+      { "token": "BATTERY_DISPOSAL_NOT_DEFINED", "whenAnswerEquals": "Not sure" }
+    ],
+    "B3": [
+      { "token": "ASSET_DATA_COMPLETE", "whenAnswerEquals": "Yes — complete and reliable" },
+      { "token": "ASSET_DATA_PARTIAL", "whenAnswerEquals": "Yes — partial" },
+      { "token": "ASSET_DATA_NOT_PROVIDED", "whenAnswerEquals": "No" },
+      { "token": "ASSET_DATA_NOT_DEFINED", "whenAnswerEquals": "Not sure" }
+    ],
+    "B3a": [
+      { "token": "ASSET_DATA_LOCATION", "whenAnswerEquals": "Service address / location" },
+      { "token": "ASSET_DATA_METER_SIZE", "whenAnswerEquals": "Meter size" },
+      { "token": "ASSET_DATA_PIT_OR_SET_TYPE", "whenAnswerEquals": "Meter pit or set type" },
+      { "token": "ASSET_DATA_LID_TYPE", "whenAnswerEquals": "Lid type" },
+      { "token": "ASSET_DATA_YOKE_SETTER_EXPANSION_WHEELS", "whenAnswerEquals": "Yoke setter configuration (including expansion wheels)" },
+      { "token": "ASSET_DATA_PLUMBING", "whenAnswerEquals": "Plumbing notes or special conditions" },
+      { "token": "ASSET_DATA_GPS", "whenAnswerEquals": "GPS coordinates" },
+      { "token": "ASSET_DATA_ROUTE", "whenAnswerEquals": "Route or read sequence information" },
+      { "token": "ASSET_DATA_OTHER", "whenAnswerEquals": "Other / varies by area" }
+    ],
+    "B4": [
+      { "token": "DATA_RELIANCE_ASSUME_ACCURATE", "whenAnswerEquals": "Utility-provided data should be assumed accurate and used for planning" },
+      { "token": "DATA_RELIANCE_INFORMATIONAL_ONLY", "whenAnswerEquals": "Utility-provided data is informational only and requires field validation" },
+      { "token": "DATA_RELIANCE_VALIDATE_PRIOR", "whenAnswerEquals": "Data will be refined or validated prior to deployment (survey or prep phase)" },
+      { "token": "DATA_RELIANCE_NOT_DEFINED", "whenAnswerEquals": "Not defined / not sure" }
+    ],
+    "B5": [
+      { "token": "DATA_REFRESH_STATIC", "whenAnswerEquals": "One-time static file (no regular updates)" },
+      { "token": "DATA_REFRESH_PERIODIC", "whenAnswerEquals": "Periodic updates (e.g., weekly or monthly)" },
+      { "token": "DATA_REFRESH_FREQUENT", "whenAnswerEquals": "Frequent or ongoing updates (e.g., daily or near real-time)" },
+      { "token": "DATA_REFRESH_NOT_DEFINED", "whenAnswerEquals": "Not defined / not sure" }
+    ],
+    "B6": [
+      { "token": "DATA_EXCHANGE_API", "whenAnswerEquals": "Automated system integration (API or system-to-system)" },
+      { "token": "DATA_EXCHANGE_SFTP", "whenAnswerEquals": "Secure file transfer (e.g., SFTP)" },
+      { "token": "DATA_EXCHANGE_PORTAL", "whenAnswerEquals": "Contractor or utility portal (download/upload)" },
+      { "token": "DATA_EXCHANGE_MANUAL", "whenAnswerEquals": "Spreadsheet or manual file exchange (e.g., Excel)" },
+      { "token": "DATA_EXCHANGE_NOT_DEFINED", "whenAnswerEquals": "Not defined / not sure" }
+    ],
+    "B6a": [
+      { "token": "WORK_TYPE_UTILITY_DEFINED_DYNAMIC", "whenAnswerEquals": "Yes — work type will be specified and may change over time" },
+      { "token": "WORK_TYPE_UTILITY_DEFINED_FIXED", "whenAnswerEquals": "Yes — work type will be specified and remain fixed" },
+      { "token": "WORK_TYPE_CONTRACTOR_DETERMINED", "whenAnswerEquals": "No — contractor determines work scope in the field" },
+      { "token": "WORK_TYPE_NOT_DEFINED", "whenAnswerEquals": "Not defined / not sure" }
+    ],
+    "B7": [
+      { "token": "DATA_EXCEPTION_CONTRACTOR_RECONCILES", "whenAnswerEquals": "Contractor corrects data and resubmits through defined process" },
+      { "token": "DATA_EXCEPTION_UTILITY_RECONCILES", "whenAnswerEquals": "Contractor flags issue; utility reviews, corrects, and reissues data" },
+      { "token": "DATA_EXCEPTION_BIDIRECTIONAL_WORKFLOW", "whenAnswerEquals": "Bidirectional exception reporting with defined reconciliation workflow" },
+      { "token": "DATA_EXCEPTION_FORMAL_APPROVAL", "whenAnswerEquals": "Formal exception and approval workflow required before proceeding" },
+      { "token": "DATA_EXCEPTION_NOT_DEFINED", "whenAnswerEquals": "Not defined / not sure" }
+    ],
+    "B8": [
+      { "token": "SURVEY_FULL_REQUIRED", "whenAnswerEquals": "Yes — full survey required before installation" },
+      { "token": "SURVEY_LIMITED_REQUIRED", "whenAnswerEquals": "Yes — limited survey (specific elements only)" },
+      { "token": "SURVEY_NOT_REQUIRED", "whenAnswerEquals": "No — rely on existing data; contractor proceeds" },
+      { "token": "SURVEY_OPTIONAL_ADD_ALT", "whenAnswerEquals": "Survey to be proposed as an optional add-alternate" },
+      { "token": "SURVEY_NOT_DEFINED", "whenAnswerEquals": "Not defined / to be determined" }
+    ],
+    "B9": [
+      { "token": "SURVEY_UTILITY_EXECUTES", "whenAnswerEquals": "Utility performs and funds the survey" },
+      { "token": "SURVEY_CONTRACTOR_EXECUTES_UTILITY_FUNDS", "whenAnswerEquals": "Contractor performs; utility funds" },
+      { "token": "SURVEY_CONTRACTOR_EXECUTES_FUNDS", "whenAnswerEquals": "Contractor performs and funds" },
+      { "token": "SURVEY_SHARED_RESPONSIBILITY", "whenAnswerEquals": "Shared responsibility (defined by scope)" },
+      { "token": "SURVEY_RESPONSIBILITY_NOT_DEFINED", "whenAnswerEquals": "Not defined / to be determined" }
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "questions": [
+    {
+      "questionId": "D1",
+      "set": "core",
+      "order": 500,
+      "prompt": "Who is responsible for storage and custody of meters, endpoints, lids, and installation materials?",
+      "answerType": "single",
+      "options": ["Utility", "Contractor", "Shared", "Not sure"],
+      "required": false,
+      "defaultAnswer": "Contractor",
+      "helperText": "Best practice: Assign clear custody and insurance responsibility to avoid disputes over loss, theft, or damage.",
+      "notePrompt": "Describe storage locations, access hours, security requirements, insurance expectations, and any constraints.",
+      "implications": [
+        "Unclear custody increases risk of disputes and contingency pricing.",
+        "Contractor custody typically increases price but reduces ambiguity.",
+        "Utility custody shifts access and productivity risk to the utility."
+      ]
+    },
+    {
+      "questionId": "D2",
+      "set": "core",
+      "order": 510,
+      "prompt": "Will there be a centralized warehouse or staging location available for this project?",
+      "answerType": "single",
+      "options": [
+        "Yes — utility-provided",
+        "Yes — contractor-provided",
+        "Multiple regional staging locations",
+        "No centralized staging",
+        "Not sure"
+      ],
+      "required": false,
+      "helperText": "Best practice: Defined staging improves productivity, accountability, and deployment pacing.",
+      "notePrompt": "Describe location(s), size/capacity, access hours, security, proximity to deployment areas, and constraints.",
+      "implications": [
+        "Lack of staging clarity increases logistics risk and contingency pricing.",
+        "Regional staging can improve route efficiency but adds coordination complexity."
+      ]
+    },
+    {
+      "questionId": "D3",
+      "set": "core",
+      "order": 520,
+      "prompt": "Who is responsible for disposal, recycling, or salvage of removed materials?",
+      "answerType": "single",
+      "options": [
+        "Utility",
+        "Contractor",
+        "Shared",
+        "Materials will be returned to utility inventory",
+        "Not sure"
+      ],
+      "required": false,
+      "helperText": "Best practice: Clearly define disposal responsibility to avoid regulatory exposure and post-award disputes.",
+      "notePrompt": "Describe material types, salvage expectations, approved recyclers, landfill restrictions, or utility policies.",
+      "implications": [
+        "Unclear disposal responsibility increases compliance and cost risk.",
+        "Contractor-led disposal simplifies field operations but increases bid cost."
+      ]
+    },
+    {
+      "questionId": "D3a",
+      "set": "core",
+      "order": 525,
+      "prompt": "Will lithium batteries or electronic components require special handling, transport, or recycling?",
+      "answerType": "single",
+      "options": [
+        "Yes — lithium batteries only",
+        "Yes — electronic components only",
+        "Yes — both lithium batteries and electronic components",
+        "No special handling required",
+        "Not sure"
+      ],
+      "required": false,
+      "helperText": "Best practice: Identify special handling early to comply with DOT, EPA, and state regulations.",
+      "notePrompt": "Note battery types, endpoint models, applicable regulations, approved recyclers, or utility policies.",
+      "implications": [
+        "Special handling requirements affect crew training, transport, and certified recycler availability.",
+        "Failure to identify requirements early increases compliance and schedule risk."
+      ]
+    },
+    {
+      "questionId": "D4",
+      "set": "core",
+      "order": 530,
+      "prompt": "Who is responsible for material loss, theft, or damage while materials are in storage or transit?",
+      "answerType": "single",
+      "options": ["Utility", "Contractor", "Shared", "Not sure"],
+      "required": false,
+      "helperText": "Best practice: Align responsibility with custody and insurance coverage to avoid disputes.",
+      "notePrompt": "Describe insurance requirements, custody transfer points, reporting timelines, and exceptions.",
+      "implications": [
+        "Shared or unclear responsibility drives contingency pricing.",
+        "Contractors price risk they control."
+      ]
+    },
+    {
+      "questionId": "D5",
+      "set": "core",
+      "order": 540,
+      "prompt": "Will materials be delivered in bulk or phased to align with deployment?",
+      "answerType": "single",
+      "options": [
+        "Bulk delivery (upfront or early)",
+        "Phased delivery aligned to deployment schedule",
+        "Hybrid (initial bulk, then phased)",
+        "Not sure"
+      ],
+      "required": false,
+      "helperText": "Best practice: Material delivery strategy directly affects contractor risk pricing, crew efficiency, and schedule certainty.",
+      "notePrompt": "Describe delivery timing, quantities, coordination responsibilities, and schedule communication.",
+      "implications": [
+        "Lack of clarity on material availability increases contingency pricing.",
+        "Upfront delivery improves efficiency but increases storage and security risk.",
+        "Phased delivery requires a clearly defined and coordinated schedule to avoid inefficiency."
+      ]
+    },
+    {
+      "questionId": "D6",
+      "set": "core",
+      "order": 550,
+      "prompt": "Are there any site-specific or regulatory constraints related to material storage or disposal?",
+      "answerType": "multi",
+      "options": [
+        "Environmental or hazardous material regulations",
+        "Local ordinances (zoning, hours, traffic)",
+        "Utility-owned facility constraints",
+        "Landfill, recycling, or approved-vendor restrictions",
+        "Space or footprint limitations",
+        "None known",
+        "Not sure"
+      ],
+      "required": false,
+      "helperText": "Best practice: Early identification of constraints reduces compliance risk and change orders.",
+      "notePrompt": "Describe known regulations, permits, approved facilities, or prior issues.",
+      "implications": [
+        "Undisclosed constraints increase schedule and compliance risk.",
+        "Early disclosure improves bid accuracy and reduces disputes."
+      ]
+    }
+  ]
+}
