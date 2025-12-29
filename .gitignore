@@ -1,2 +1,10 @@
-﻿# Checkpoint snapshots are local archives, not source-of-truth
-ARCHIVE/checkpoints/PHASE6_LOCK_*/
+﻿# Phase 6 runtime outputs (never commit)
+OUTPUT/
+OUTPUTS/
+
+# Local runtime artifacts
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
