@@ -1,0 +1,16 @@
+{
+  "schema_version": "phase7-evidence-manifest-v1",
+  "purpose": "Tracks RFP packages, docs, addendums, and verified outcomes for future indexing.",
+  "required_fields": [
+    "tenant_id",
+    "project_id",
+    "rfp_id",
+    "documents",
+    "tags",
+    "outcomes"
+  ],
+  "notes": [
+    "This is a placeholder schema stub. Final schema will be formalized in Phase 7.",
+    "Evidence = raw inputs + verified facts; derived outputs remain separate."
+  ]
+}

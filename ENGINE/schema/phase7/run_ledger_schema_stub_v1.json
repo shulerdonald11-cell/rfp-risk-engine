@@ -1,0 +1,17 @@
+{
+  "schema_version": "phase7-run-ledger-v1",
+  "purpose": "Per-run metadata record. References Phase 6 artifacts without modifying Phase 6 schemas.",
+  "required_fields": [
+    "run_id",
+    "created_utc",
+    "tenant_id",
+    "project_id",
+    "inputs",
+    "config",
+    "outputs"
+  ],
+  "notes": [
+    "This is a placeholder schema stub. Final schema will be formalized in Phase 7.",
+    "Keep deterministic engine unchanged; ledger only records what happened."
+  ]
+}
