@@ -1,7 +1,6 @@
 ﻿import json
-import os
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 import uuid
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -9,15 +8,8 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 PHASE6_CFG = REPO_ROOT / "PHASE6" / "SCORING_CONFIG_v1.json"
 ENRICHMENT = REPO_ROOT / "ENRICHMENT" / "enrichment_map_v1.1.json"
 
-OUTPUT = REPO_ROOT / "OUTPUT"
-RUNS_ROOT = REPO_ROOT / "OUTPUTS" / "runs"
-
-OUT_RISK_SCORECARD = OUTPUT / "risk_scorecard_v1.json"
-OUT_PRICING_RISK   = OUTPUT / "pricing_risk_v1.json"
-OUT_EXEC_RISK      = OUTPUT / "execution_risk_v1.json"
-OUT_EXEC_SUMMARY   = OUTPUT / "executive_risk_summary_v1.md"
-OUT_BID_DECISION   = OUTPUT / "bid_decision_v1.md"
-OUT_MANIFEST       = OUTPUT / "phase6_build_manifest_v1.json"
+OUTPUT_LOCKED = REPO_ROOT / "OUTPUT"                # canonical locked baseline (DO NOT WRITE)
+RUNS_ROOT     = REPO_ROOT / "OUTPUTS" / "runs"      # runtime executions live here
 
 def read_json(path: Path) -> dict:
     if not path.exists():
@@ -38,6 +30,12 @@ def safe_list(x):
 def safe_str(x):
     return x if isinstance(x, str) else ""
 
+def make_run_dir() -> Path:
+    run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ") + "_" + uuid.uuid4().hex[:8]
+    run_dir = RUNS_ROOT / run_id / "phase6"
+    run_dir.mkdir(parents=True, exist_ok=True)
+    return run_dir
+
 def compute_phase6(cfg: dict, enrichment: dict) -> dict:
     """
     Deterministic, explainable scoring:
@@ -47,16 +45,11 @@ def compute_phase6(cfg: dict, enrichment: dict) -> dict:
     """
     entries = safe_list(enrichment.get("entries"))
 
-    # Config defaults (won't explode if config is sparse)
     scoring = cfg.get("scoring", {})
     decision = cfg.get("decision", {})
 
-    # Weights (optional): { severity: { low: 5, medium: 10, high: 20 } }
     sev_weights = scoring.get("severity_weights", {"low": 5, "medium": 10, "high": 20})
 
-    # Thresholds (optional)
-    # Example expected keys:
-    # decision.thresholds = { "bid": 0-30, "caution": 31-60, "no_bid": 61-100 }
     thresholds = decision.get("thresholds", {
         "bid": {"max": 30},
         "caution": {"min": 31, "max": 60},
@@ -101,16 +94,13 @@ def compute_phase6(cfg: dict, enrichment: dict) -> dict:
             execution_score += weight
             execution_items.append({**base, "impacts": scope_impacts})
 
-    # Overall score: deterministic rule (configurable later)
     overall_mode = scoring.get("overall_mode", "max")  # "max" or "avg"
     if overall_mode == "avg":
         overall_score = int(round((pricing_score + execution_score) / 2))
     else:
         overall_score = max(pricing_score, execution_score)
 
-    # Decision bucket
     def bucket(score: int) -> str:
-        b = "caution"
         bid_cfg = thresholds.get("bid", {})
         cau_cfg = thresholds.get("caution", {})
         nob_cfg = thresholds.get("no_bid", {})
@@ -119,19 +109,18 @@ def compute_phase6(cfg: dict, enrichment: dict) -> dict:
             return "bid"
         if "min" in nob_cfg and score >= int(nob_cfg["min"]):
             return "no_bid"
-        # caution default window
+
         min_c = int(cau_cfg.get("min", 31))
         max_c = int(cau_cfg.get("max", 60))
         if min_c <= score <= max_c:
             return "caution"
-        # fallback
+
         if score < min_c:
             return "bid"
         return "no_bid"
 
     decision_bucket = bucket(overall_score)
 
-    # Confidence indicator: deterministic mapping
     confidence_map = decision.get("confidence", {
         "bid": 0.85,
         "caution": 0.60,
@@ -212,39 +201,50 @@ def run_once(enrichment_path: Path = None) -> dict:
 
     result = compute_phase6(cfg, enrichment)
 
-    # Write primary outputs (same filenames)
-    write_json(OUT_RISK_SCORECARD, {
+    run_dir = make_run_dir()
+
+    out_risk_scorecard = run_dir / "risk_scorecard_v1.json"
+    out_pricing_risk   = run_dir / "pricing_risk_v1.json"
+    out_exec_risk      = run_dir / "execution_risk_v1.json"
+    out_exec_summary   = run_dir / "executive_risk_summary_v1.md"
+    out_bid_decision   = run_dir / "bid_decision_v1.md"
+    out_manifest       = run_dir / "phase6_build_manifest_v1.json"
+
+    write_json(out_risk_scorecard, {
         "scores": result["scores"],
         "decision": result["decision"]
     })
-    write_json(OUT_PRICING_RISK, result["pricing"])
-    write_json(OUT_EXEC_RISK, result["execution"])
-    write_text(OUT_EXEC_SUMMARY, render_exec_summary(result))
-    write_text(OUT_BID_DECISION, render_bid_decision(result))
+    write_json(out_pricing_risk, result["pricing"])
+    write_json(out_exec_risk, result["execution"])
+    write_text(out_exec_summary, render_exec_summary(result))
+    write_text(out_bid_decision, render_bid_decision(result))
 
     manifest = {
         "phase": 6,
-        "generated_at_utc": datetime.utcnow().isoformat() + "Z",
+        "generated_at_utc": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "inputs": {
             "scoring_config": str(PHASE6_CFG.relative_to(REPO_ROOT)),
-            "enrichment_map": str(ENRICHMENT.relative_to(REPO_ROOT))
+            "enrichment_map": str((enrichment_path or ENRICHMENT).relative_to(REPO_ROOT))
         },
         "outputs": [
-            str(OUT_RISK_SCORECARD.relative_to(REPO_ROOT)),
-            str(OUT_BID_DECISION.relative_to(REPO_ROOT)),
-            str(OUT_EXEC_SUMMARY.relative_to(REPO_ROOT)),
-            str(OUT_PRICING_RISK.relative_to(REPO_ROOT)),
-            str(OUT_EXEC_RISK.relative_to(REPO_ROOT)),
+            str(out_risk_scorecard.relative_to(REPO_ROOT)),
+            str(out_bid_decision.relative_to(REPO_ROOT)),
+            str(out_exec_summary.relative_to(REPO_ROOT)),
+            str(out_pricing_risk.relative_to(REPO_ROOT)),
+            str(out_exec_risk.relative_to(REPO_ROOT)),
         ]
     }
-    write_json(OUT_MANIFEST, manifest)
+    write_json(out_manifest, manifest)
 
     return result
 
 def main():
-    run_once()
-    print("OK: Phase 6 outputs written to OUTPUT/")
+    run_dir = make_run_dir()  # create once for display, but we need the same one used in run_once
+    # Roll back: don't create twice, just run and print after.
+    result = run_once()
+    # Find the most recent run folder and print it (simple + reliable).
+    latest = sorted((RUNS_ROOT).glob("*"), key=lambda p: p.name)[-1]
+    print(f"OK: Phase 6 outputs written to {latest / 'phase6'}")
 
 if __name__ == "__main__":
     main()
-
