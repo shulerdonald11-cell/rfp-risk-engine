@@ -1,0 +1,400 @@
+﻿Folder PATH listing for volume Windows
+Volume serial number is 7851-A8BC
+C:.
+|   .dockerignore
+|   .gitignore
+|   Dockerfile
+|   repo_structure_check.txt
+|   ROADMAP.md
+|   
++---.venv
+|   |   .gitignore
+|   |   pyvenv.cfg
+|   |   
+|   +---Include
+|   +---Lib
+|   |   \---site-packages
+|   |       |   typing_extensions.py
+|   |       |   
+|   |       +---annotated_types
+|   |       |   |   py.typed
+|   |       |   |   test_cases.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           test_cases.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---annotated_types-0.7.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---anyio
+|   |       |   |   from_thread.py
+|   |       |   |   functools.py
+|   |       |   |   lowlevel.py
+|   |       |   |   py.typed
+|   |       |   |   pytest_plugin.py
+|   |       |   |   to_interpreter.py
+|   |       |   |   to_process.py
+|   |       |   |   to_thread.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---abc
+|   |       |   |   |   _eventloop.py
+|   |       |   |   |   _resources.py
+|   |       |   |   |   _sockets.py
+|   |       |   |   |   _streams.py
+|   |       |   |   |   _subprocesses.py
+|   |       |   |   |   _tasks.py
+|   |       |   |   |   _testing.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           _eventloop.cpython-314.pyc
+|   |       |   |           _resources.cpython-314.pyc
+|   |       |   |           _sockets.cpython-314.pyc
+|   |       |   |           _streams.cpython-314.pyc
+|   |       |   |           _subprocesses.cpython-314.pyc
+|   |       |   |           _tasks.cpython-314.pyc
+|   |       |   |           _testing.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---streams
+|   |       |   |   |   buffered.py
+|   |       |   |   |   file.py
+|   |       |   |   |   memory.py
+|   |       |   |   |   stapled.py
+|   |       |   |   |   text.py
+|   |       |   |   |   tls.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           buffered.cpython-314.pyc
+|   |       |   |           file.cpython-314.pyc
+|   |       |   |           memory.cpython-314.pyc
+|   |       |   |           stapled.cpython-314.pyc
+|   |       |   |           text.cpython-314.pyc
+|   |       |   |           tls.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---_backends
+|   |       |   |   |   _asyncio.py
+|   |       |   |   |   _trio.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           _asyncio.cpython-314.pyc
+|   |       |   |           _trio.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---_core
+|   |       |   |   |   _asyncio_selector_thread.py
+|   |       |   |   |   _contextmanagers.py
+|   |       |   |   |   _eventloop.py
+|   |       |   |   |   _exceptions.py
+|   |       |   |   |   _fileio.py
+|   |       |   |   |   _resources.py
+|   |       |   |   |   _signals.py
+|   |       |   |   |   _sockets.py
+|   |       |   |   |   _streams.py
+|   |       |   |   |   _subprocesses.py
+|   |       |   |   |   _synchronization.py
+|   |       |   |   |   _tasks.py
+|   |       |   |   |   _tempfile.py
+|   |       |   |   |   _testing.py
+|   |       |   |   |   _typedattr.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           _asyncio_selector_thread.cpython-314.pyc
+|   |       |   |           _contextmanagers.cpython-314.pyc
+|   |       |   |           _eventloop.cpython-314.pyc
+|   |       |   |           _exceptions.cpython-314.pyc
+|   |       |   |           _fileio.cpython-314.pyc
+|   |       |   |           _resources.cpython-314.pyc
+|   |       |   |           _signals.cpython-314.pyc
+|   |       |   |           _sockets.cpython-314.pyc
+|   |       |   |           _streams.cpython-314.pyc
+|   |       |   |           _subprocesses.cpython-314.pyc
+|   |       |   |           _synchronization.cpython-314.pyc
+|   |       |   |           _tasks.cpython-314.pyc
+|   |       |   |           _tempfile.cpython-314.pyc
+|   |       |   |           _testing.cpython-314.pyc
+|   |       |   |           _typedattr.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           from_thread.cpython-314.pyc
+|   |       |           functools.cpython-314.pyc
+|   |       |           lowlevel.cpython-314.pyc
+|   |       |           pytest_plugin.cpython-314.pyc
+|   |       |           to_interpreter.cpython-314.pyc
+|   |       |           to_process.cpython-314.pyc
+|   |       |           to_thread.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---anyio-4.12.0.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---click
+|   |       |   |   core.py
+|   |       |   |   decorators.py
+|   |       |   |   exceptions.py
+|   |       |   |   formatting.py
+|   |       |   |   globals.py
+|   |       |   |   parser.py
+|   |       |   |   py.typed
+|   |       |   |   shell_completion.py
+|   |       |   |   termui.py
+|   |       |   |   testing.py
+|   |       |   |   types.py
+|   |       |   |   utils.py
+|   |       |   |   _compat.py
+|   |       |   |   _termui_impl.py
+|   |       |   |   _textwrap.py
+|   |       |   |   _utils.py
+|   |       |   |   _winconsole.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           core.cpython-314.pyc
+|   |       |           decorators.cpython-314.pyc
+|   |       |           exceptions.cpython-314.pyc
+|   |       |           formatting.cpython-314.pyc
+|   |       |           globals.cpython-314.pyc
+|   |       |           parser.cpython-314.pyc
+|   |       |           shell_completion.cpython-314.pyc
+|   |       |           termui.cpython-314.pyc
+|   |       |           testing.cpython-314.pyc
+|   |       |           types.cpython-314.pyc
+|   |       |           utils.cpython-314.pyc
+|   |       |           _compat.cpython-314.pyc
+|   |       |           _termui_impl.cpython-314.pyc
+|   |       |           _textwrap.cpython-314.pyc
+|   |       |           _utils.cpython-314.pyc
+|   |       |           _winconsole.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---click-8.3.1.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.txt
+|   |       |           
+|   |       +---colorama
+|   |       |   |   ansi.py
+|   |       |   |   ansitowin32.py
+|   |       |   |   initialise.py
+|   |       |   |   win32.py
+|   |       |   |   winterm.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---tests
+|   |       |   |   |   ansitowin32_test.py
+|   |       |   |   |   ansi_test.py
+|   |       |   |   |   initialise_test.py
+|   |       |   |   |   isatty_test.py
+|   |       |   |   |   utils.py
+|   |       |   |   |   winterm_test.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           ansitowin32_test.cpython-314.pyc
+|   |       |   |           ansi_test.cpython-314.pyc
+|   |       |   |           initialise_test.cpython-314.pyc
+|   |       |   |           isatty_test.cpython-314.pyc
+|   |       |   |           utils.cpython-314.pyc
+|   |       |   |           winterm_test.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           ansi.cpython-314.pyc
+|   |       |           ansitowin32.cpython-314.pyc
+|   |       |           initialise.cpython-314.pyc
+|   |       |           win32.cpython-314.pyc
+|   |       |           winterm.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---colorama-0.4.6.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.txt
+|   |       |           
+|   |       +---fastapi
+|   |       |   |   applications.py
+|   |       |   |   background.py
+|   |       |   |   cli.py
+|   |       |   |   concurrency.py
+|   |       |   |   datastructures.py
+|   |       |   |   encoders.py
+|   |       |   |   exceptions.py
+|   |       |   |   exception_handlers.py
+|   |       |   |   logger.py
+|   |       |   |   params.py
+|   |       |   |   param_functions.py
+|   |       |   |   py.typed
+|   |       |   |   requests.py
+|   |       |   |   responses.py
+|   |       |   |   routing.py
+|   |       |   |   staticfiles.py
+|   |       |   |   templating.py
+|   |       |   |   testclient.py
+|   |       |   |   types.py
+|   |       |   |   utils.py
+|   |       |   |   websockets.py
+|   |       |   |   _compat.py
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   +---dependencies
+|   |       |   |   |   models.py
+|   |       |   |   |   utils.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           models.cpython-314.pyc
+|   |       |   |           utils.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---middleware
+|   |       |   |   |   cors.py
+|   |       |   |   |   gzip.py
+|   |       |   |   |   httpsredirect.py
+|   |       |   |   |   trustedhost.py
+|   |       |   |   |   wsgi.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           cors.cpython-314.pyc
+|   |       |   |           gzip.cpython-314.pyc
+|   |       |   |           httpsredirect.cpython-314.pyc
+|   |       |   |           trustedhost.cpython-314.pyc
+|   |       |   |           wsgi.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---openapi
+|   |       |   |   |   constants.py
+|   |       |   |   |   docs.py
+|   |       |   |   |   models.py
+|   |       |   |   |   utils.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           constants.cpython-314.pyc
+|   |       |   |           docs.cpython-314.pyc
+|   |       |   |           models.cpython-314.pyc
+|   |       |   |           utils.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---security
+|   |       |   |   |   api_key.py
+|   |       |   |   |   base.py
+|   |       |   |   |   http.py
+|   |       |   |   |   oauth2.py
+|   |       |   |   |   open_id_connect_url.py
+|   |       |   |   |   utils.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           api_key.cpython-314.pyc
+|   |       |   |           base.cpython-314.pyc
+|   |       |   |           http.cpython-314.pyc
+|   |       |   |           oauth2.cpython-314.pyc
+|   |       |   |           open_id_connect_url.cpython-314.pyc
+|   |       |   |           utils.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           applications.cpython-314.pyc
+|   |       |           background.cpython-314.pyc
+|   |       |           cli.cpython-314.pyc
+|   |       |           concurrency.cpython-314.pyc
+|   |       |           datastructures.cpython-314.pyc
+|   |       |           encoders.cpython-314.pyc
+|   |       |           exceptions.cpython-314.pyc
+|   |       |           exception_handlers.cpython-314.pyc
+|   |       |           logger.cpython-314.pyc
+|   |       |           params.cpython-314.pyc
+|   |       |           param_functions.cpython-314.pyc
+|   |       |           requests.cpython-314.pyc
+|   |       |           responses.cpython-314.pyc
+|   |       |           routing.cpython-314.pyc
+|   |       |           staticfiles.cpython-314.pyc
+|   |       |           templating.cpython-314.pyc
+|   |       |           testclient.cpython-314.pyc
+|   |       |           types.cpython-314.pyc
+|   |       |           utils.cpython-314.pyc
+|   |       |           websockets.cpython-314.pyc
+|   |       |           _compat.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           __main__.cpython-314.pyc
+|   |       |           
+|   |       +---fastapi-0.115.6.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---h11
+|   |       |   |   py.typed
+|   |       |   |   _abnf.py
+|   |       |   |   _connection.py
+|   |       |   |   _events.py
+|   |       |   |   _headers.py
+|   |       |   |   _readers.py
+|   |       |   |   _receivebuffer.py
+|   |       |   |   _state.py
+|   |       |   |   _util.py
+|   |       |   |   _version.py
+|   |       |   |   _writers.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           _abnf.cpython-314.pyc
+|   |       |           _connection.cpython-314.pyc
+|   |       |           _events.cpython-314.pyc
+|   |       |           _headers.cpython-314.pyc
+|   |       |           _readers.cpython-314.pyc
+|   |       |           _receivebuffer.cpython-314.pyc
+|   |       |           _state.cpython-314.pyc
+|   |       |           _util.cpython-314.pyc
+|   |       |           _version.cpython-314.pyc
+|   |       |           _writers.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---h11-0.16.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.txt
+|   |       |           

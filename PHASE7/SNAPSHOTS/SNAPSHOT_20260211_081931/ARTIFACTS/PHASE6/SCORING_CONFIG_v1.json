@@ -1,0 +1,23 @@
+﻿{
+  "version": "SCORING_CONFIG_v1",
+  "description": "Phase 6 tunable scoring parameters. Safe to adjust without modifying enrichment outputs.",
+  "decision_thresholds": {
+    "proceed_max": 39,
+    "proceed_with_conditions_max": 69,
+    "no_bid_min": 70
+  },
+  "weights": {
+    "pricing": 0.5,
+    "execution": 0.5
+  },
+  "mixed_risk_split": 0.5,
+  "confidence_model": {
+    "edge_distance_weight": 0.7,
+    "completeness_weight": 0.3,
+    "high_risk_unanswered_penalty": 1.0
+  },
+  "rounding": {
+    "scores": "nearest_integer",
+    "averages": "one_decimal"
+  }
+}
