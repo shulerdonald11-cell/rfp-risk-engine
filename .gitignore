@@ -8,3 +8,7 @@ OUTPUTS/
 # OS junk
 .DS_Store
 Thumbs.db
+
+# Phase7 snapshots (local only)
+PHASE7/SNAPSHOTS/
+
