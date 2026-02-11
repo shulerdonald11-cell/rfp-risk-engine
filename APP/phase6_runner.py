@@ -6,7 +6,7 @@ import uuid
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
 PHASE6_CFG = REPO_ROOT / "PHASE6" / "SCORING_CONFIG_v1.json"
-ENRICHMENT = REPO_ROOT / "ENRICHMENT" / "enrichment_map_v1.1.json"
+DEFAULT_ENRICHMENT = REPO_ROOT / "ENRICHMENT" / "enrichment_map_v1.1.json"
 
 OUTPUT_LOCKED = REPO_ROOT / "OUTPUT"                # canonical locked baseline (DO NOT WRITE)
 RUNS_ROOT     = REPO_ROOT / "OUTPUTS" / "runs"      # runtime executions live here
@@ -30,19 +30,13 @@ def safe_list(x):
 def safe_str(x):
     return x if isinstance(x, str) else ""
 
-def make_run_dir() -> Path:
+def make_run_root() -> Path:
     run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ") + "_" + uuid.uuid4().hex[:8]
-    run_dir = RUNS_ROOT / run_id / "phase6"
-    run_dir.mkdir(parents=True, exist_ok=True)
-    return run_dir
+    run_root = RUNS_ROOT / run_id
+    run_root.mkdir(parents=True, exist_ok=True)
+    return run_root
 
 def compute_phase6(cfg: dict, enrichment: dict) -> dict:
-    """
-    Deterministic, explainable scoring:
-    - Uses ONLY SCORING_CONFIG_v1.json + enrichment_map_v1.1.json
-    - Separates pricing vs execution based on impacts arrays (if present)
-    - Aggregates into a risk scorecard + decision output
-    """
     entries = safe_list(enrichment.get("entries"))
 
     scoring = cfg.get("scoring", {})
@@ -195,20 +189,25 @@ def render_bid_decision(result: dict) -> str:
     lines.append("")
     return "\n".join(lines)
 
-def run_once(enrichment_path: Path = None) -> dict:
+def run_once(enrichment_path: Path = None, run_root: Path = None) -> Path:
     cfg = read_json(PHASE6_CFG)
-    enrichment = read_json(enrichment_path or ENRICHMENT)
+
+    enrichment_path = enrichment_path or DEFAULT_ENRICHMENT
+    enrichment_path = enrichment_path.resolve()
+    enrichment = read_json(enrichment_path)
 
     result = compute_phase6(cfg, enrichment)
 
-    run_dir = make_run_dir()
+    run_root = (run_root.resolve() if run_root else make_run_root())
+    phase6_dir = run_root / "phase6"
+    phase6_dir.mkdir(parents=True, exist_ok=True)
 
-    out_risk_scorecard = run_dir / "risk_scorecard_v1.json"
-    out_pricing_risk   = run_dir / "pricing_risk_v1.json"
-    out_exec_risk      = run_dir / "execution_risk_v1.json"
-    out_exec_summary   = run_dir / "executive_risk_summary_v1.md"
-    out_bid_decision   = run_dir / "bid_decision_v1.md"
-    out_manifest       = run_dir / "phase6_build_manifest_v1.json"
+    out_risk_scorecard = phase6_dir / "risk_scorecard_v1.json"
+    out_pricing_risk   = phase6_dir / "pricing_risk_v1.json"
+    out_exec_risk      = phase6_dir / "execution_risk_v1.json"
+    out_exec_summary   = phase6_dir / "executive_risk_summary_v1.md"
+    out_bid_decision   = phase6_dir / "bid_decision_v1.md"
+    out_manifest       = phase6_dir / "phase6_build_manifest_v1.json"
 
     write_json(out_risk_scorecard, {
         "scores": result["scores"],
@@ -219,32 +218,45 @@ def run_once(enrichment_path: Path = None) -> dict:
     write_text(out_exec_summary, render_exec_summary(result))
     write_text(out_bid_decision, render_bid_decision(result))
 
+    # relative paths for manifest (best-effort)
+    def rel(p: Path) -> str:
+        try:
+            return str(p.resolve().relative_to(REPO_ROOT))
+        except Exception:
+            return str(p)
+
     manifest = {
         "phase": 6,
         "generated_at_utc": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "inputs": {
-            "scoring_config": str(PHASE6_CFG.relative_to(REPO_ROOT)),
-            "enrichment_map": str((enrichment_path or ENRICHMENT).relative_to(REPO_ROOT))
+            "scoring_config": rel(PHASE6_CFG),
+            "enrichment_map": rel(enrichment_path)
         },
         "outputs": [
-            str(out_risk_scorecard.relative_to(REPO_ROOT)),
-            str(out_bid_decision.relative_to(REPO_ROOT)),
-            str(out_exec_summary.relative_to(REPO_ROOT)),
-            str(out_pricing_risk.relative_to(REPO_ROOT)),
-            str(out_exec_risk.relative_to(REPO_ROOT)),
+            rel(out_risk_scorecard),
+            rel(out_bid_decision),
+            rel(out_exec_summary),
+            rel(out_pricing_risk),
+            rel(out_exec_risk),
+            rel(out_manifest),
         ]
     }
     write_json(out_manifest, manifest)
 
-    return result
+    return phase6_dir
 
 def main():
-    run_dir = make_run_dir()  # create once for display, but we need the same one used in run_once
-    # Roll back: don't create twice, just run and print after.
-    result = run_once()
-    # Find the most recent run folder and print it (simple + reliable).
-    latest = sorted((RUNS_ROOT).glob("*"), key=lambda p: p.name)[-1]
-    print(f"OK: Phase 6 outputs written to {latest / 'phase6'}")
+    import argparse
+    p = argparse.ArgumentParser()
+    p.add_argument("--enrichment", default=str(DEFAULT_ENRICHMENT), help="Path to enrichment map JSON")
+    p.add_argument("--run-dir", default=None, help="Path to OUTPUTS/runs/<run_id> (writes into <run-dir>/phase6)")
+    args = p.parse_args()
+
+    enrich = Path(args.enrichment)
+    run_root = Path(args.run_dir) if args.run_dir else None
+
+    phase6_dir = run_once(enrich, run_root)
+    print(f"OK: Phase 6 outputs written to {phase6_dir}")
 
 if __name__ == "__main__":
     main()
